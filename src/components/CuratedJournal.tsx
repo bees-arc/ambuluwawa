@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 
 export default function CuratedJournal() {
   const articles = [
@@ -38,26 +38,32 @@ export default function CuratedJournal() {
         
         {/* Section Header (Exact from ambuluwawa.com) */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#004495]/10 text-[#004495] text-[11px] uppercase tracking-[0.2em] font-bold mb-3">
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>The Mountain Journal</span>
+          </div>
+
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#001C3D] leading-tight mb-5">
-            Don&apos;t Let Your Curiosity Go Unanswered!
+            Don&apos;t Let Your Curiosity <br />
+            <span className="italic font-normal text-[#004495]">Go Unanswered!</span>
           </h2>
-          <div className="w-16 h-[1.5px] bg-[#C5A880] mx-auto mb-6" />
+          <div className="w-16 h-[2px] bg-[#C5A880] mx-auto mb-6 rounded-full" />
           <p className="text-[#516375] text-sm sm:text-base font-light leading-relaxed">
             You&apos;re likely overflowing with questions and curiosity about Ambuluwawa and Sri Lanka. 
             Rest assured, our written blog posts are here to guide you!
           </p>
         </div>
 
-        {/* 3 Articles Grid (Exact from ambuluwawa.com) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* 3 Articles Bento Grid with Curved Edges */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {articles.map((art) => (
             <article
               key={art.id}
-              className="group bg-[#FFFFFF] rounded-[4px] border border-[#E0D7C5] overflow-hidden fs-card-shadow flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5"
+              className="group bg-white rounded-3xl border border-[#DFD5C2] overflow-hidden fs-card-shadow flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:border-[#004495]"
             >
               <div>
                 {/* Visual Thumbnail */}
-                <div className="relative h-56 w-full overflow-hidden bg-[#001C3D]">
+                <div className="relative h-60 w-full overflow-hidden bg-[#001C3D]">
                   <Image
                     src={art.image}
                     alt={art.title}
@@ -65,13 +71,14 @@ export default function CuratedJournal() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-[2px] bg-[#001C3D]/80 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.18em]">
-                    Blog
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001C3D]/80 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
+                  <div className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#001C3D]/80 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.18em] font-semibold">
+                    Editorial
                   </div>
                 </div>
 
                 {/* Article Body */}
-                <div className="p-6">
+                <div className="p-6 sm:p-7">
                   <div className="text-[11px] text-[#6E8094] mb-2 font-medium">
                     {art.date}
                   </div>
@@ -89,14 +96,14 @@ export default function CuratedJournal() {
               </div>
 
               {/* Read More Link */}
-              <div className="p-6 pt-0 border-t border-[#F2ECE0] mt-4">
+              <div className="p-6 sm:p-7 pt-0 border-t border-[#F2ECE0] mt-4 flex items-center justify-between">
                 <a
                   href={art.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1.5 text-xs uppercase tracking-[0.18em] font-semibold text-[#004495] hover:text-[#001C3D] transition-colors"
+                  className="inline-flex items-center space-x-2 text-xs uppercase tracking-[0.18em] font-semibold text-[#004495] hover:text-[#001C3D] transition-colors bg-[#F0F5FA] hover:bg-[#E3EDF7] px-4 py-2 rounded-full"
                 >
-                  <span>Read More</span>
+                  <span>Read Article</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>

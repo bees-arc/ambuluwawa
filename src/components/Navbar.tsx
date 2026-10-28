@@ -94,7 +94,7 @@ export default function Navbar() {
               href="https://hub.ambuluwawa.com/login"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-[11px] uppercase tracking-[0.18em] font-semibold px-4 py-2.5 rounded-[3px] border transition-all flex items-center space-x-1.5 ${
+              className={`text-[11px] uppercase tracking-[0.18em] font-semibold px-5 py-2.5 rounded-full border transition-all flex items-center space-x-1.5 ${
                 isScrolled
                   ? "border-[#001C3D]/30 text-[#001C3D] hover:bg-[#001C3D] hover:text-white"
                   : "border-white/30 text-white hover:bg-white/10"
@@ -108,7 +108,7 @@ export default function Navbar() {
               href="https://prod-ambuluwawa-main-web.web.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="fs-btn px-5 py-2.5 bg-[#004495] hover:bg-[#001C3D] text-white text-[11px] uppercase tracking-[0.18em] font-semibold rounded-[3px] shadow transition-all flex items-center space-x-2"
+              className="fs-btn px-6 py-2.5 bg-[#004495] hover:bg-[#001C3D] text-white text-[11px] uppercase tracking-[0.18em] font-semibold rounded-full shadow transition-all flex items-center space-x-2 border border-[#0055BA]"
             >
               <Ticket className="w-3.5 h-3.5 text-[#C5A880]" />
               <span>Book Ticket</span>
@@ -119,13 +119,13 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation"
-            className={`xl:hidden p-2 rounded-[3px] border transition-colors ${
+            className={`xl:hidden p-2.5 rounded-full border transition-colors ${
               isScrolled 
                 ? "border-[#D8CFBF] text-[#001C3D] bg-white/80" 
                 : "border-white/30 text-white bg-black/40"
             }`}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </header>

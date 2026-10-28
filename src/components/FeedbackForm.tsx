@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2, MessageSquare } from "lucide-react";
 
 export default function FeedbackForm() {
   const [formData, setFormData] = useState({
@@ -29,17 +29,22 @@ export default function FeedbackForm() {
         
         {/* Section Header (Exact from ambuluwawa.com) */}
         <div className="text-center mb-14 sm:mb-16">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#004495]/10 text-[#004495] text-[11px] uppercase tracking-[0.2em] font-bold mb-3">
+            <MessageSquare className="w-3.5 h-3.5" />
+            <span>Visitor Guestbook</span>
+          </div>
+
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#001C3D] leading-tight mb-4">
             Share Your Feedback &amp; Suggestions
           </h2>
-          <div className="w-16 h-[1.5px] bg-[#C5A880] mx-auto mb-5" />
+          <div className="w-16 h-[2px] bg-[#C5A880] mx-auto mb-5 rounded-full" />
           <p className="text-[#516375] text-sm sm:text-base font-light leading-relaxed">
             Help Us Improve the Ambuluwawa Biodiversity Complex Experience for All Visitors
           </p>
         </div>
 
-        {/* Form Card (Dark Navy Four Seasons Finish) */}
-        <div className="bg-[#FFFFFF] rounded-[4px] border border-[#E0D7C5] p-8 sm:p-12 fs-card-shadow">
+        {/* Form Card (Bento Style with Curved Edges) */}
+        <div className="bg-white rounded-3xl border border-[#DFD5C2] p-8 sm:p-12 shadow-2xl">
           {submitted ? (
             <div className="text-center py-10 animate-fade-in">
               <div className="w-16 h-16 rounded-full bg-[#001C3D] text-[#C5A880] flex items-center justify-center mx-auto mb-5">
@@ -56,7 +61,7 @@ export default function FeedbackForm() {
                   setSubmitted(false);
                   setFormData({ name: "", email: "", country: "", phone: "", message: "" });
                 }}
-                className="fs-btn px-6 py-2.5 bg-[#001C3D] text-white text-xs uppercase tracking-[0.16em] font-semibold rounded-[3px]"
+                className="fs-btn px-7 py-3 bg-[#001C3D] text-white text-xs uppercase tracking-[0.18em] font-semibold rounded-full shadow"
               >
                 Send Another Response
               </button>
@@ -65,7 +70,7 @@ export default function FeedbackForm() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-[11px] uppercase tracking-[0.15em] text-[#55697D] font-semibold mb-2">
+                  <label className="block text-[11px] uppercase tracking-[0.16em] text-[#55697D] font-bold mb-2">
                     Name
                   </label>
                   <input
@@ -74,12 +79,12 @@ export default function FeedbackForm() {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] uppercase tracking-[0.15em] text-[#55697D] font-semibold mb-2">
+                  <label className="block text-[11px] uppercase tracking-[0.16em] text-[#55697D] font-bold mb-2">
                     Email
                   </label>
                   <input
@@ -88,14 +93,14 @@ export default function FeedbackForm() {
                     placeholder="Your Email Address"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-[11px] uppercase tracking-[0.15em] text-[#55697D] font-semibold mb-2">
+                  <label className="block text-[11px] uppercase tracking-[0.16em] text-[#55697D] font-bold mb-2">
                     Country
                   </label>
                   <input
@@ -104,12 +109,12 @@ export default function FeedbackForm() {
                     placeholder="Your Country"
                     value={formData.country}
                     onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] uppercase tracking-[0.15em] text-[#55697D] font-semibold mb-2">
+                  <label className="block text-[11px] uppercase tracking-[0.16em] text-[#55697D] font-bold mb-2">
                     Phone
                   </label>
                   <input
@@ -117,13 +122,13 @@ export default function FeedbackForm() {
                     placeholder="Your Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-[11px] uppercase tracking-[0.15em] text-[#55697D] font-semibold mb-2">
+                <label className="block text-[11px] uppercase tracking-[0.16em] text-[#55697D] font-bold mb-2">
                   Message
                 </label>
                 <textarea
@@ -132,7 +137,7 @@ export default function FeedbackForm() {
                   placeholder="Share your thoughts or questions..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors resize-none"
+                  className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#001C3D] focus:outline-none focus:border-[#004495] transition-colors resize-none"
                 />
               </div>
 
@@ -140,16 +145,10 @@ export default function FeedbackForm() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="fs-btn px-10 py-4 bg-[#004495] hover:bg-[#001C3D] text-white text-xs uppercase tracking-[0.2em] font-semibold rounded-[3px] shadow transition-all inline-flex items-center space-x-2"
+                  className="fs-btn inline-flex items-center space-x-2.5 px-9 py-4 bg-[#004495] hover:bg-[#002D62] text-white text-xs uppercase tracking-[0.2em] font-semibold rounded-full shadow-lg transition-all border border-[#0055BA] disabled:opacity-50"
                 >
-                  {loading ? (
-                    <span>Submitting...</span>
-                  ) : (
-                    <>
-                      <span>Submit</span>
-                      <Send className="w-4 h-4 text-[#C5A880]" />
-                    </>
-                  )}
+                  <span>{loading ? "Sending..." : "Submit Feedback"}</span>
+                  <Send className="w-3.5 h-3.5 text-[#C5A880]" />
                 </button>
               </div>
             </form>

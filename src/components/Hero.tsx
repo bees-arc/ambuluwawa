@@ -1,37 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { 
   Play, 
   X, 
-  Calendar, 
-  Users, 
-  Compass, 
   ArrowRight, 
-  Clock, 
   Mountain,
   Ticket
 } from "lucide-react";
 
 export default function Hero() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const [selectedExperience, setSelectedExperience] = useState("Spiral Tower Climb");
-  const [dateInputVal, setDateInputVal] = useState("2026-10-28");
-  const [visitorType, setVisitorType] = useState("Local / Foreign Visitors");
-
-  useEffect(() => {
-    const today = new Date();
-    setDateInputVal(today.toISOString().split("T")[0]);
-  }, []);
-
-  const experiences = [
-    "Spiral Tower Climb (55m)",
-    "Biodiversity Nature Sanctuary",
-    "Java Lounge Mountain Coffee",
-    "Pinewood Restaurant Dining",
-    "Adventure Park & Expeditions"
-  ];
 
   return (
     <>
@@ -57,9 +37,14 @@ export default function Hero() {
         {/* Hero Narrative Core */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center my-auto py-8 sm:py-12">
           {/* Refined Kicker Badge */}
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-[2px] bg-[#001C3D]/80 backdrop-blur-md border border-[#C5A880]/40 text-[#E8EDF5] text-[10px] sm:text-[11px] uppercase tracking-[0.22em] font-medium mb-6 sm:mb-8">
-            <Mountain className="w-3.5 h-3.5 text-[#C5A880]" />
-            <span>Sri Lanka&apos;s Crown Pinnacle • 3,567 FT Elevation</span>
+          {/* Destination Landmark Live Status Badge */}
+          <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#001428]/85 backdrop-blur-md border border-[#C5A880]/50 text-[#F5EAD8] text-[10px] sm:text-[11px] uppercase tracking-[0.22em] font-medium mb-6 shadow-xl">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="font-semibold text-white">Open Today • 07:30 AM – 05:30 PM</span>
+            <span className="text-[#C5A880]">•</span>
+            <span>3,567 FT Elevation</span>
+            <span className="hidden sm:inline text-[#C5A880]">•</span>
+            <span className="hidden sm:inline text-white/90">Gampola, Sri Lanka</span>
           </div>
 
           {/* Exact Headline from ambuluwawa.com in Four Seasons Serif */}
@@ -79,109 +64,22 @@ export default function Hero() {
               href="https://prod-ambuluwawa-main-web.web.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="fs-btn w-full sm:w-auto px-8 py-4 bg-[#004495] hover:bg-[#002D62] text-white text-xs sm:text-[13px] uppercase tracking-[0.2em] font-semibold rounded-[3px] shadow-lg transition-all flex items-center justify-center space-x-2.5"
+              className="fs-btn w-full sm:w-auto px-8 py-4 bg-[#004495] hover:bg-[#002D62] text-white text-xs sm:text-[13px] uppercase tracking-[0.2em] font-semibold rounded-full shadow-2xl transition-all flex items-center justify-center space-x-2.5 border border-[#0055BA] group"
             >
-              <Ticket className="w-4 h-4 text-[#C5A880]" />
+              <Ticket className="w-4 h-4 text-[#C5A880] group-hover:rotate-12 transition-transform" />
               <span>Book My Ticket To Ambuluwawa</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
             <button
               onClick={() => setVideoModalOpen(true)}
-              className="w-full sm:w-auto px-7 py-4 rounded-[3px] bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs sm:text-[13px] uppercase tracking-[0.18em] font-medium border border-white/25 transition-all flex items-center justify-center space-x-2.5 group"
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs sm:text-[13px] uppercase tracking-[0.18em] font-medium border border-white/25 transition-all flex items-center justify-center space-x-2.5 group shadow-lg"
             >
               <div className="w-6 h-6 rounded-full bg-[#C5A880] flex items-center justify-center text-[#001C3D] group-hover:scale-110 transition-transform">
                 <Play className="w-3 h-3 fill-current ml-0.5" />
               </div>
-              <span>Watch Video</span>
+              <span>Watch 4K Video Tour</span>
             </button>
-          </div>
-        </div>
-
-        {/* Floating Four Seasons Experience & Booking Concierge Widget (Dark Navy Theme) */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4 sm:mt-6">
-          <div className="bg-[#FAF7F0]/95 backdrop-blur-xl border border-[#D9CEBA]/80 rounded-[4px] shadow-2xl p-4 sm:p-5 text-[#121820]">
-            {/* Widget Header row */}
-            <div className="flex flex-wrap items-center justify-between pb-3.5 mb-3.5 border-b border-[#E8DFC9] gap-2">
-              <div className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.16em] text-[#004495] font-semibold">
-                <Compass className="w-3.5 h-3.5 text-[#004495]" />
-                <span>Find an Experience at Ambuluwawa</span>
-              </div>
-              <div className="flex items-center space-x-4 text-[11px] text-[#4A5E73]">
-                <span className="flex items-center">
-                  <Clock className="w-3 h-3 mr-1 text-[#004495]" />
-                  Open Today: 07:30 AM – 05:30 PM
-                </span>
-                <span className="hidden md:inline text-[#D0C4AF]">|</span>
-                <span className="hidden md:inline text-[#004495] font-medium">Open 365 Days a Year</span>
-              </div>
-            </div>
-
-            {/* Selection Inputs Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 items-center">
-              {/* Select 1: Experience */}
-              <div className="flex flex-col p-2.5 rounded-[3px] bg-white border border-[#E0D7C5] hover:border-[#004495] transition-colors">
-                <span className="text-[10px] uppercase tracking-[0.15em] text-[#6A7B8C] font-medium flex items-center mb-1">
-                  <Compass className="w-3 h-3 mr-1 text-[#004495]" />
-                  Experience
-                </span>
-                <select
-                  value={selectedExperience}
-                  onChange={(e) => setSelectedExperience(e.target.value)}
-                  className="bg-transparent text-xs font-semibold text-[#001C3D] focus:outline-none cursor-pointer"
-                >
-                  {experiences.map((exp) => (
-                    <option key={exp} value={exp}>
-                      {exp}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Select 2: Date */}
-              <div className="flex flex-col p-2.5 rounded-[3px] bg-white border border-[#E0D7C5] hover:border-[#004495] transition-colors">
-                <span className="text-[10px] uppercase tracking-[0.15em] text-[#6A7B8C] font-medium flex items-center mb-1">
-                  <Calendar className="w-3 h-3 mr-1 text-[#004495]" />
-                  Date of Visit
-                </span>
-                <input
-                  type="date"
-                  value={dateInputVal}
-                  onChange={(e) => setDateInputVal(e.target.value)}
-                  className="bg-transparent text-xs font-semibold text-[#001C3D] focus:outline-none cursor-pointer"
-                />
-              </div>
-
-              {/* Select 3: Visitors */}
-              <div className="flex flex-col p-2.5 rounded-[3px] bg-white border border-[#E0D7C5] hover:border-[#004495] transition-colors">
-                <span className="text-[10px] uppercase tracking-[0.15em] text-[#6A7B8C] font-medium flex items-center mb-1">
-                  <Users className="w-3 h-3 mr-1 text-[#004495]" />
-                  Ticket Category
-                </span>
-                <select
-                  value={visitorType}
-                  onChange={(e) => setVisitorType(e.target.value)}
-                  className="bg-transparent text-xs font-semibold text-[#001C3D] focus:outline-none cursor-pointer"
-                >
-                  <option value="Local / Foreign Visitors">Local &amp; Foreign Visitors</option>
-                  <option value="Local Resident">Local Resident (Sri Lankan)</option>
-                  <option value="Foreign Tourist">International Traveler</option>
-                </select>
-              </div>
-
-              {/* Action Button: Directly routes to Ticket Booking Portal */}
-              <div>
-                <a
-                  href="https://prod-ambuluwawa-main-web.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="fs-btn w-full py-3.5 bg-[#001C3D] hover:bg-[#004495] text-white text-[11px] uppercase tracking-[0.18em] font-semibold rounded-[3px] shadow transition-all flex items-center justify-center space-x-2"
-                >
-                  <span>Book Ticket Online</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#C5A880]" />
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -189,7 +87,7 @@ export default function Hero() {
       {/* Video Modal (YouTube Player for https://youtu.be/XDMWG0VO3sg) */}
       {videoModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-          <div className="relative w-full max-w-4xl bg-black rounded-[4px] overflow-hidden shadow-2xl border border-white/10">
+          <div className="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/15">
             <div className="flex items-center justify-between p-4 bg-[#001229] text-white border-b border-white/10">
               <div className="flex items-center space-x-2">
                 <Mountain className="w-4 h-4 text-[#C5A880]" />
@@ -197,7 +95,7 @@ export default function Hero() {
               </div>
               <button
                 onClick={() => setVideoModalOpen(false)}
-                className="p-1 rounded hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+                className="p-1.5 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
