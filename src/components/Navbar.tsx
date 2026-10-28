@@ -4,15 +4,11 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
-  Phone, 
-  Clock, 
-  Mail, 
   Menu, 
   X, 
   User, 
   Ticket, 
-  ChevronRight,
-  Search
+  ChevronRight 
 } from "lucide-react";
 
 export default function Navbar() {
@@ -39,59 +35,9 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Luxury Announcement Bar (Dark Navy #001229) */}
-      <div className="bg-[#001229] text-[#D8E2EC] text-[11px] tracking-wide border-b border-[#0A2547] hidden lg:block transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
-          <div className="flex items-center space-x-6">
-            <a 
-              href="tel:+94712724724"
-              className="flex items-center text-[#D8E2EC] hover:text-[#C5A880] transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5 mr-1.5 text-[#C5A880]" />
-              +94 71 272 4724
-            </a>
-            <span className="text-[#1A3A60]">|</span>
-            <a 
-              href="mailto:info@ambuluwawa.com"
-              className="flex items-center text-[#D8E2EC] hover:text-[#C5A880] transition-colors"
-            >
-              <Mail className="w-3.5 h-3.5 mr-1.5 text-[#C5A880]" />
-              info@ambuluwawa.com
-            </a>
-            <span className="text-[#1A3A60]">|</span>
-            <span className="flex items-center text-[#C5A880]">
-              <Clock className="w-3.5 h-3.5 mr-1.5 text-[#C5A880]" />
-              Mon - Fri: 7:30 - 17:00 (Open 365 Days a Year)
-            </span>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://www.facebook.com/ambuluwawa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#D8E2EC] hover:text-[#C5A880] transition-colors"
-              aria-label="Facebook"
-            >
-              Facebook
-            </a>
-            <span className="text-[#1A3A60]">/</span>
-            <a
-              href="https://www.instagram.com/ambuluwawa_official/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#D8E2EC] hover:text-[#C5A880] transition-colors"
-              aria-label="Instagram"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Four Seasons Inspired Header */}
       <header
-        className={`fixed top-0 lg:top-auto left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? "bg-[#FBF9F5]/95 backdrop-blur-md shadow-sm border-b border-[#E2D9CC] py-3.5 text-[#001C3D]"
             : "bg-gradient-to-b from-[#001229]/90 via-[#001229]/60 to-transparent py-5 text-white"

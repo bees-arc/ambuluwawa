@@ -39,16 +39,16 @@ export default function Hero() {
         {/* Full-bleed Luxury Cinematic Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://ambuluwawa.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-19-at-6.11.18-PM.jpeg"
-            alt="Ambuluwawa Mountain Peak and Spiral Tower"
+            src="/images/ambuluwawa-hero.jpg"
+            alt="Ambuluwawa Peak Panoramic Sunrise and Spiral Tower"
             fill
             priority
-            quality={95}
-            className="object-cover object-center scale-[1.02] transition-transform duration-[12000ms] ease-out hover:scale-100"
+            quality={100}
+            className="object-cover object-center scale-[1.01] transition-transform duration-[12000ms] ease-out hover:scale-100"
           />
-          {/* Refined Luxury Four Seasons Overlay: Dark Navy Blue Vignette */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#001229] via-[#001C3D]/50 to-[#001229]/75" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#001229]/40 to-[#001229]/85" />
+          {/* Refined Luxury Four Seasons Overlay: Subtle Dark Navy Gradient preserving panoramic scenery */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#001229] via-[#001C3D]/30 to-[#001229]/60" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#001229]/20 to-[#001229]/70" />
         </div>
 
         {/* Ambient Top Spacing */}
