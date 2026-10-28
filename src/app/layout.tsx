@@ -112,7 +112,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-[#FBF9F5] text-[#1A1A1A] font-sans selection:bg-[#C5A880]/30 selection:text-[#162F21]">
+      <body className="min-h-screen bg-[#FBF9F5] text-[#121820] font-sans selection:bg-[#004495]/20 selection:text-[#001C3D]">
         {children}
       </body>
     </html>

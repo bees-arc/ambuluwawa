@@ -1,80 +1,59 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import OpeningInfoSection from "@/components/OpeningInfoSection";
 import SanctuaryOverview from "@/components/SanctuaryOverview";
 import ExperiencesGrid from "@/components/ExperiencesGrid";
-import DistanceCalculator from "@/components/DistanceCalculator";
 import TestimonialsElon from "@/components/TestimonialsElon";
+import DistanceCalculator from "@/components/DistanceCalculator";
+import VisitorCreativityVideo from "@/components/VisitorCreativityVideo";
 import CuratedJournal from "@/components/CuratedJournal";
-import GallerySection from "@/components/GallerySection";
-import VisitorGuide from "@/components/VisitorGuide";
 import FeedbackForm from "@/components/FeedbackForm";
 import Footer from "@/components/Footer";
 import StickyBookingBar from "@/components/StickyBookingBar";
-import BookingModal from "@/components/BookingModal";
 
 export default function Home() {
-  const [bookingModalOpen, setBookingModalOpen] = useState(false);
-  const [preselectedExperience, setPreselectedExperience] = useState<string>("Spiral Tower Climb (55m)");
-
-  const handleOpenBooking = (exp?: string) => {
-    if (exp) {
-      setPreselectedExperience(exp);
-    }
-    setBookingModalOpen(true);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#171A18] antialiased selection:bg-[#C5A880]/30 selection:text-[#162F21]">
-      {/* Luxury Navigation Header */}
-      <Navbar onOpenBooking={() => handleOpenBooking()} />
+    <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#121820] antialiased selection:bg-[#004495]/20 selection:text-[#001C3D]">
+      {/* 1. Header & Navigation */}
+      <Navbar />
 
       <main className="flex-grow">
-        {/* Four Seasons Inspired Hero Section */}
-        <Hero 
-          onOpenBooking={() => handleOpenBooking()} 
-          onSelectExperience={(exp) => setPreselectedExperience(exp)}
-        />
+        {/* 2. Hero Section (Four Seasons Inspired) */}
+        <Hero />
 
-        {/* Sanctuary & 4 Pillars Section */}
+        {/* 3. Opening Hours & Directions Card */}
+        <OpeningInfoSection />
+
+        {/* 4. Leave the World Below & 4 Pillars + "Did You Know That" */}
         <SanctuaryOverview />
 
-        {/* Curated Experiences (Java Lounge, Pinewood, Adventure Park, Souvenirs) */}
-        <ExperiencesGrid onOpenBooking={() => handleOpenBooking()} />
+        {/* 5. Find Adventure & Expedition Beyond the Tower (Java Lounge, Souvenirs, Adventure Park, Pinewood) */}
+        <ExperiencesGrid />
 
-        {/* All Roads Lead to Ambuluwawa (Distance & Route Calculator) */}
-        <DistanceCalculator />
-
-        {/* Global Acclaim: Elon Musk & 2,500+ Verified Testimonials */}
+        {/* 6. From Billionaires to Backpackers (Ambuluwawa Welcomes All - Elon Musk & Reviews) */}
         <TestimonialsElon />
 
-        {/* The Ambuluwawa Chronicles (Journal & Blog) */}
+        {/* 7. All Roads Lead to Ambuluwawa (Distance & Route Explorer) */}
+        <DistanceCalculator />
+
+        {/* 8. Video & Witness Their Creativity */}
+        <VisitorCreativityVideo />
+
+        {/* 9. Blog / Don't Let Your Curiosity Go Unanswered */}
         <CuratedJournal />
 
-        {/* High-Resolution Visual Anthology & Lightbox */}
-        <GallerySection />
-
-        {/* Visitor Guide, Safety Protocols & Interactive Ticket Calculator */}
-        <VisitorGuide onOpenBooking={() => handleOpenBooking()} />
-
-        {/* Guest Feedback & Concierge Inquiries */}
+        {/* 10. Share Your Feedback & Suggestions */}
         <FeedbackForm />
       </main>
 
-      {/* Four Seasons Style Luxury Footer */}
+      {/* 11. Footer */}
       <Footer />
 
-      {/* Mobile Sticky Booking Bar */}
-      <StickyBookingBar onOpenBooking={() => handleOpenBooking()} />
-
-      {/* Luxury Reservation & Ticket Modal */}
-      <BookingModal 
-        isOpen={bookingModalOpen} 
-        onClose={() => setBookingModalOpen(false)}
-        initialExperience={preselectedExperience}
-      />
+      {/* 12. Mobile Sticky Quick Action Bar */}
+      <StickyBookingBar />
     </div>
   );
 }
