@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function CuratedJournal() {
   const articles = [
@@ -33,37 +33,39 @@ export default function CuratedJournal() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#FAF7F0] text-[#121820] relative">
+    <section className="py-20 sm:py-28 bg-[#000D20] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header (Exact from ambuluwawa.com) */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#004495]/10 text-[#004495] text-[11px] uppercase tracking-[0.2em] font-bold mb-3">
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>The Mountain Journal</span>
-          </div>
-
-          <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#001C3D] leading-tight mb-5">
-            Don&apos;t Let Your Curiosity <br />
-            <span className="italic font-normal text-[#004495]">Go Unanswered!</span>
+        {/* Section Divider Header (Exact Reference Style) */}
+        <div className="flex items-center space-x-4 mb-14 sm:mb-16">
+          <div className="w-10 sm:w-16 h-[1px] bg-white/30 shrink-0" />
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.25em] text-white shrink-0">
+            TRAVEL JOURNAL
           </h2>
-          <div className="w-16 h-[2px] bg-[#C5A880] mx-auto mb-6 rounded-full" />
-          <p className="text-[#516375] text-sm sm:text-base font-light leading-relaxed">
-            You&apos;re likely overflowing with questions and curiosity about Ambuluwawa and Sri Lanka. 
-            Rest assured, our written blog posts are here to guide you!
+          <div className="flex-grow h-[1px] bg-white/20" />
+        </div>
+
+        {/* Narrative Intro */}
+        <div className="max-w-2xl mb-12">
+          <h3 className="font-serif text-3xl sm:text-4xl font-light text-white leading-tight mb-3">
+            Don&apos;t Let Your Curiosity <br />
+            <span className="italic font-normal text-[#C5A880]">Go Unanswered!</span>
+          </h3>
+          <p className="text-sm text-white/70 font-light leading-relaxed">
+            You&apos;re likely overflowing with questions and curiosity about Ambuluwawa and Sri Lanka. Rest assured, our written blog posts are here to guide you!
           </p>
         </div>
 
-        {/* 3 Articles Bento Grid with Curved Edges */}
+        {/* 3 Articles Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {articles.map((art) => (
             <article
               key={art.id}
-              className="group bg-white rounded-3xl border border-[#DFD5C2] overflow-hidden fs-card-shadow flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:border-[#004495]"
+              className="group bg-white/[0.04] rounded-3xl border border-white/15 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-[#C5A880]/60 hover:bg-white/[0.07]"
             >
               <div>
                 {/* Visual Thumbnail */}
-                <div className="relative h-60 w-full overflow-hidden bg-[#001C3D]">
+                <div className="relative h-60 w-full overflow-hidden bg-[#001229]">
                   <Image
                     src={art.image}
                     alt={art.title}
@@ -71,37 +73,37 @@ export default function CuratedJournal() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#001C3D]/80 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
-                  <div className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#001C3D]/80 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.18em] font-semibold">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-transparent to-transparent opacity-85" />
+                  <div className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#000D20]/80 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.18em] font-semibold border border-white/15">
                     Editorial
                   </div>
                 </div>
 
                 {/* Article Body */}
                 <div className="p-6 sm:p-7">
-                  <div className="text-[11px] text-[#6E8094] mb-2 font-medium">
+                  <div className="text-[11px] text-[#C5A880] mb-2 font-medium">
                     {art.date}
                   </div>
 
-                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#001C3D] group-hover:text-[#004495] transition-colors mb-3 leading-snug">
+                  <h4 className="font-serif text-xl sm:text-2xl font-normal text-white group-hover:text-[#C5A880] transition-colors mb-3 leading-snug">
                     <a href={art.url} target="_blank" rel="noopener noreferrer">
                       {art.title}
                     </a>
-                  </h3>
+                  </h4>
 
-                  <p className="text-xs sm:text-sm text-[#5B6D7F] font-light leading-relaxed">
+                  <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
                     {art.excerpt}
                   </p>
                 </div>
               </div>
 
               {/* Read More Link */}
-              <div className="p-6 sm:p-7 pt-0 border-t border-[#F2ECE0] mt-4 flex items-center justify-between">
+              <div className="p-6 sm:p-7 pt-0 border-t border-white/10 mt-4 flex items-center justify-between">
                 <a
                   href={art.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-xs uppercase tracking-[0.18em] font-semibold text-[#004495] hover:text-[#001C3D] transition-colors bg-[#F0F5FA] hover:bg-[#E3EDF7] px-4 py-2 rounded-full"
+                  className="inline-flex items-center space-x-2 text-xs uppercase tracking-[0.18em] font-semibold text-white hover:text-[#C5A880] transition-colors bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full border border-white/10"
                 >
                   <span>Read Article</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />

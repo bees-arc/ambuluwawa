@@ -13,23 +13,26 @@
     --color-gold-hover: #D4BA95;
     --color-gold-dark: #A6875E;
     
-    /* Luxury Dark Navy Palette */
-    --color-navy: #001C3D;
-    --color-navy-dark: #001229;
-    --color-navy-midnight: #071527;
+    /* Luxury Dark Navy Palette (Replacing black from reference design) */
+    --color-navy-deep: #000B1A;
+    --color-navy: #001229;
+    --color-navy-card: rgba(255, 255, 255, 0.05);
+    --color-navy-card-border: rgba(255, 255, 255, 0.12);
     --color-navy-primary: #004495;
-    --color-navy-soft: #0F2D59;
-    --color-charcoal: #121820;
-    --color-border-subtle: rgba(0, 28, 61, 0.08);
+    --color-navy-soft: #082247;
+    --color-gold: #C5A880;
+    --color-gold-hover: #D4BA95;
+    --color-gold-dark: #A6875E;
+    --color-charcoal: #FAF7F0;
   }
 
   * {
-    border-color: var(--color-stone);
+    border-color: rgba(255, 255, 255, 0.12);
   }
 
   body {
-    background-color: var(--color-alabaster);
-    color: var(--color-charcoal);
+    background-color: #000D20;
+    color: #FAF7F0;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

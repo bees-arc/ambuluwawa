@@ -63,35 +63,37 @@ export default function DistanceCalculator() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#FBF9F5] text-[#121820] relative">
+    <section className="py-20 sm:py-28 bg-[#000D20] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header (Exact from ambuluwawa.com) */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#004495]/10 text-[#004495] text-[11px] uppercase tracking-[0.2em] font-bold mb-3">
-            <Car className="w-3.5 h-3.5" />
-            <span>Travel &amp; Route Guide</span>
-          </div>
-
-          <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#001C3D] leading-tight mb-5">
-            Beyond the Horizon <br />
-            <span className="italic font-normal text-[#004495]">Closer Than Expected</span>
+        {/* Section Divider Header (Exact Reference Style) */}
+        <div className="flex items-center space-x-4 mb-14 sm:mb-16">
+          <div className="w-10 sm:w-16 h-[1px] bg-white/30 shrink-0" />
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.25em] text-white shrink-0">
+            TRAVEL ROUTES &amp; DISTANCES
           </h2>
-          <div className="w-16 h-[2px] bg-[#C5A880] mx-auto mb-6 rounded-full" />
-          <p className="text-[#516375] text-sm sm:text-base font-light leading-relaxed">
-            No matter where you find yourself in Sri Lanka, the allure of Ambuluwawa 
-            awaits within a few hours&apos; drive.
+          <div className="flex-grow h-[1px] bg-white/20" />
+        </div>
+
+        {/* Narrative Intro */}
+        <div className="max-w-2xl mb-12">
+          <h3 className="font-serif text-3xl sm:text-4xl font-light text-white leading-tight mb-3">
+            Beyond the Horizon <br />
+            <span className="italic font-normal text-[#C5A880]">Closer Than Expected</span>
+          </h3>
+          <p className="text-sm text-white/70 font-light leading-relaxed">
+            No matter where you find yourself in Sri Lanka, the allure of Ambuluwawa awaits within a few hours&apos; drive.
           </p>
         </div>
 
-        {/* Bento Grid Architecture */}
+        {/* 6 Routes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-7 mb-10">
           {routes.map((route) => (
             <div
               key={route.origin}
-              className={`${route.colSpan} group bg-white rounded-3xl overflow-hidden border border-[#DFD5C2] fs-card-shadow flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:border-[#004495]`}
+              className={`${route.colSpan} group bg-white/[0.04] rounded-3xl overflow-hidden border border-white/15 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-[#C5A880]/60 hover:bg-white/[0.07]`}
             >
-              <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-[#001C3D]">
+              <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-[#001229]">
                 <Image
                   src={route.img}
                   alt={`From ${route.origin} to Ambuluwawa`}
@@ -99,33 +101,33 @@ export default function DistanceCalculator() {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#001C3D]/85 via-transparent to-transparent opacity-65 group-hover:opacity-75 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-transparent to-transparent opacity-85" />
                 
                 {/* Curved Route Tag */}
-                <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-[#001C3D]/85 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.16em] font-semibold shadow-md">
+                <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-[#000D20]/80 backdrop-blur-md text-white text-[10px] uppercase tracking-[0.16em] font-semibold border border-white/15">
                   {route.tag}
                 </div>
               </div>
 
               <div className="p-6 sm:p-7 flex flex-col justify-between flex-grow">
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#6E8094] font-bold mb-1">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#C5A880] font-bold mb-1">
                     From {route.origin}
                   </div>
-                  <div className="font-serif text-2xl font-light text-[#001C3D] flex items-baseline justify-between mb-3">
-                    <span className="text-[#004495] font-normal">{route.distance}</span>
-                    <span className="text-xs text-[#5B6D7E] font-sans flex items-center bg-[#F4F8FC] px-2.5 py-1 rounded-full border border-[#D5E4F3]">
-                      <Clock className="w-3.5 h-3.5 mr-1 text-[#004495]" />
+                  <div className="font-serif text-2xl font-light text-white flex items-baseline justify-between mb-3">
+                    <span className="text-white font-normal">{route.distance}</span>
+                    <span className="text-xs text-white/80 font-sans flex items-center bg-white/10 px-3 py-1 rounded-full border border-white/10">
+                      <Clock className="w-3.5 h-3.5 mr-1 text-[#C5A880]" />
                       {route.duration}
                     </span>
                   </div>
-                  <p className="text-xs text-[#5E7184] font-light leading-relaxed">
+                  <p className="text-xs text-white/70 font-light leading-relaxed">
                     {route.tip}
                   </p>
                 </div>
 
-                <div className="pt-4 mt-5 border-t border-[#F0E8DC] flex items-center justify-between text-xs">
-                  <span className="text-[#6C8094] flex items-center">
+                <div className="pt-4 mt-5 border-t border-white/10 flex items-center justify-between text-xs">
+                  <span className="text-white/60 flex items-center">
                     <MapPin className="w-3.5 h-3.5 mr-1 text-[#C5A880]" />
                     To Ambuluwawa Peak
                   </span>
@@ -133,7 +135,7 @@ export default function DistanceCalculator() {
                     href="https://maps.app.goo.gl/LkNaHVi1Fyoj4yet7"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#004495] hover:text-[#001C3D] font-semibold flex items-center space-x-1 bg-[#F0F5FA] hover:bg-[#E3EDF7] px-3 py-1 rounded-full transition-colors"
+                    className="text-[#C5A880] hover:text-white font-semibold flex items-center space-x-1.5 bg-white/10 hover:bg-white/20 px-3.5 py-1.5 rounded-full transition-colors border border-white/15"
                   >
                     <span>Directions</span>
                     <Navigation className="w-3 h-3 text-[#C5A880]" />
@@ -144,10 +146,10 @@ export default function DistanceCalculator() {
           ))}
         </div>
 
-        {/* Train & Transit Bento Strip */}
-        <div className="p-6 sm:p-8 rounded-3xl bg-[#001C3D] text-white border border-[#0A3366] shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+        {/* Train & Transit Strip */}
+        <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.04] text-white border border-white/15 backdrop-blur-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-4">
-            <div className="w-14 h-14 rounded-2xl bg-[#00142C] border border-[#0D386E] flex items-center justify-center shrink-0 text-[#C5A880]">
+            <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0 text-[#C5A880]">
               <Train className="w-7 h-7" />
             </div>
             <div>
@@ -157,7 +159,7 @@ export default function DistanceCalculator() {
               <h4 className="font-serif text-xl sm:text-2xl font-light">
                 Gampola Railway Station (3.5 km away)
               </h4>
-              <p className="text-xs text-[#D0DEF0] font-light mt-0.5">
+              <p className="text-xs text-white/70 font-light mt-0.5">
                 Take the iconic Main Line scenic hill country train to Gampola. Station-front authorized Tuk-Tuks take 15 minutes to the sanctuary gate.
               </p>
             </div>
@@ -167,9 +169,9 @@ export default function DistanceCalculator() {
             href="https://maps.app.goo.gl/LkNaHVi1Fyoj4yet7"
             target="_blank"
             rel="noopener noreferrer"
-            className="fs-btn shrink-0 px-6 py-3.5 rounded-full bg-[#004495] hover:bg-[#002D62] text-white text-xs uppercase tracking-[0.18em] font-semibold transition-all border border-[#0055BA] flex items-center space-x-2"
+            className="shrink-0 px-7 py-3.5 rounded-full bg-white hover:bg-[#FAF7F0] text-[#001229] text-xs uppercase tracking-[0.18em] font-bold transition-all flex items-center space-x-2 shadow-lg hover:scale-105"
           >
-            <Compass className="w-4 h-4 text-[#C5A880]" />
+            <Compass className="w-4 h-4 text-[#004495]" />
             <span>Open Navigation Map</span>
           </a>
         </div>

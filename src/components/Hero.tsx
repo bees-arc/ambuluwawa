@@ -7,16 +7,54 @@ import {
   X, 
   ArrowRight, 
   Mountain,
-  Ticket
+  Ticket,
+  Compass,
+  Coffee,
+  Trees,
+  Footprints
 } from "lucide-react";
 
 export default function Hero() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
+  // 5 Feature preview cards matching the reference image's floating card row
+  const previewHighlights = [
+    {
+      title: "3,567 FT",
+      subtitle: "Summit Peak",
+      img: "https://ambuluwawa.com/wp-content/uploads/2024/06/Firefly-20240617204232-1-1024x1024.webp",
+      icon: Mountain
+    },
+    {
+      title: "55 Meters",
+      subtitle: "Spiral Tower",
+      img: "https://ambuluwawa.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-19-at-6.11.18-PM.jpeg",
+      icon: Footprints
+    },
+    {
+      title: "Java Lounge",
+      subtitle: "Mountain Coffee",
+      img: "https://ambuluwawa.com/wp-content/uploads/2024/06/a2.webp",
+      icon: Coffee
+    },
+    {
+      title: "Bio Reserve",
+      subtitle: "Nature Sanctuary",
+      img: "https://ambuluwawa.com/wp-content/uploads/2024/01/Ambuluwawa_23-scaled.jpg",
+      icon: Trees
+    },
+    {
+      title: "360° Vistas",
+      subtitle: "Highland Vibe",
+      img: "https://ambuluwawa.com/wp-content/uploads/elementor/thumbs/22-scaled-qpsaj84a44qt7mewtfhr8t6ogo4ut3m7j2fjn5hk8o.webp",
+      icon: Compass
+    }
+  ];
+
   return (
     <>
-      <section className="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between pt-28 pb-12 sm:pb-16 overflow-hidden">
-        {/* Full-bleed Luxury Cinematic Background */}
+      <section className="relative min-h-screen flex flex-col justify-between pt-28 sm:pt-32 pb-16 overflow-hidden">
+        {/* Full-bleed Scenic Background */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/ambuluwawa-hero.jpg"
@@ -24,62 +62,98 @@ export default function Hero() {
             fill
             priority
             quality={100}
-            className="object-cover object-center scale-[1.01] transition-transform duration-[12000ms] ease-out hover:scale-100"
+            className="object-cover object-center scale-[1.01]"
           />
-          {/* Refined Luxury Four Seasons Overlay: Subtle Dark Navy Gradient preserving panoramic scenery */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#001229] via-[#001C3D]/30 to-[#001229]/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#001229]/20 to-[#001229]/70" />
+          {/* Subtle Dark Navy Gradient replacing black - preserves golden sunrise while seamlessly fading to deep navy */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#000D20]/50 via-[#000D20]/25 to-[#000D20]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-transparent to-black/30" />
         </div>
 
-        {/* Ambient Top Spacing */}
+        {/* Top Space for Navigation */}
         <div className="w-full"></div>
 
-        {/* Hero Narrative Core */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center my-auto py-8 sm:py-12">
-          {/* Refined Kicker Badge */}
-          {/* Destination Landmark Live Status Badge */}
-          <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#001428]/85 backdrop-blur-md border border-[#C5A880]/50 text-[#F5EAD8] text-[10px] sm:text-[11px] uppercase tracking-[0.22em] font-medium mb-6 shadow-xl">
+        {/* Center Giant Landmark Typography - Exactly like "JAPAN" in reference design */}
+        <div className="relative z-10 w-full text-center px-4 my-auto select-none pointer-events-none">
+          {/* Live Destination Status Pill */}
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#001229]/80 backdrop-blur-md border border-white/20 text-[#FAF7F0] text-[10px] sm:text-xs uppercase tracking-[0.22em] font-semibold mb-3 shadow-2xl pointer-events-auto">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="font-semibold text-white">Open Today • 07:30 AM – 05:30 PM</span>
+            <span>Open Today • 07:30 AM – 05:30 PM</span>
             <span className="text-[#C5A880]">•</span>
             <span>3,567 FT Elevation</span>
             <span className="hidden sm:inline text-[#C5A880]">•</span>
-            <span className="hidden sm:inline text-white/90">Gampola, Sri Lanka</span>
+            <span className="hidden sm:inline">Gampola, Sri Lanka</span>
           </div>
 
-          {/* Exact Headline from ambuluwawa.com in Four Seasons Serif */}
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-light text-white leading-[1.12] sm:leading-[1.08] tracking-[-0.015em] mb-5 sm:mb-6 drop-shadow-md">
-            Where Vistas Inspire <br className="hidden sm:inline" />
-            <span className="italic font-normal text-[#E2EAF4]">&amp; Stories Ignite</span>
+          {/* Giant Stylized Destination Name (Reference Style: "JAPAN") */}
+          <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[170px] font-black uppercase tracking-[0.18em] sm:tracking-[0.22em] text-white/95 leading-none drop-shadow-[0_15px_30px_rgba(0,13,32,0.9)] transition-all">
+            AMBULUWAWA
           </h1>
 
-          {/* Exact Subtitle from ambuluwawa.com */}
-          <p className="max-w-2xl mx-auto text-[#D5E1EE] text-base sm:text-lg md:text-xl font-light leading-relaxed tracking-wide mb-8 sm:mb-10 text-balance opacity-95">
+          <p className="font-serif text-lg sm:text-2xl md:text-3xl font-light text-white/90 italic tracking-wide mt-2 drop-shadow-md">
+            Where Vistas Inspire &amp; Stories Ignite
+          </p>
+          <p className="text-xs sm:text-sm text-white/80 font-light tracking-wider max-w-xl mx-auto mt-1">
             Beyond the view, beyond the climb, lies a story waiting to be told.
           </p>
+        </div>
 
-          {/* Action Buttons: Book Ticket & Watch Film */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-            <a
-              href="https://prod-ambuluwawa-main-web.web.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fs-btn w-full sm:w-auto px-8 py-4 bg-[#004495] hover:bg-[#002D62] text-white text-xs sm:text-[13px] uppercase tracking-[0.2em] font-semibold rounded-full shadow-2xl transition-all flex items-center justify-center space-x-2.5 border border-[#0055BA] group"
-            >
-              <Ticket className="w-4 h-4 text-[#C5A880] group-hover:rotate-12 transition-transform" />
-              <span>Book My Ticket To Ambuluwawa</span>
-              <ArrowRight className="w-4 h-4" />
-            </a>
+        {/* Bottom Floating Preview Cards Row + Book Ticket Action (Exact Layout from Reference Image) */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-6 sm:mt-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 bg-[#001229]/80 backdrop-blur-xl border border-white/15 rounded-3xl p-5 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+            
+            {/* 5 Vertical Preview Cards (Exact from Reference Image) */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 w-full lg:w-auto flex-grow">
+              {previewHighlights.map((card) => {
+                const Icon = card.icon;
+                return (
+                  <div
+                    key={card.title}
+                    className="group relative h-28 sm:h-32 rounded-2xl overflow-hidden border border-white/20 bg-white/5 hover:border-[#C5A880] transition-all duration-300 flex flex-col justify-end p-3 cursor-pointer shadow-md hover:-translate-y-1"
+                  >
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 50vw, 20vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-[#000D20]/40 to-transparent" />
+                    
+                    <div className="relative z-10">
+                      <div className="flex items-center space-x-1 text-[#C5A880] mb-0.5">
+                        <Icon className="w-3 h-3" />
+                        <span className="text-[10px] uppercase font-bold tracking-wider">{card.title}</span>
+                      </div>
+                      <div className="text-[11px] text-white/90 font-light leading-tight">
+                        {card.subtitle}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
 
-            <button
-              onClick={() => setVideoModalOpen(true)}
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs sm:text-[13px] uppercase tracking-[0.18em] font-medium border border-white/25 transition-all flex items-center justify-center space-x-2.5 group shadow-lg"
-            >
-              <div className="w-6 h-6 rounded-full bg-[#C5A880] flex items-center justify-center text-[#001C3D] group-hover:scale-110 transition-transform">
-                <Play className="w-3 h-3 fill-current ml-0.5" />
-              </div>
-              <span>Watch 4K Video Tour</span>
-            </button>
+            {/* Action Buttons: Solid White "Book Ticket" Pill & Watch Video Pill */}
+            <div className="flex sm:flex-col lg:flex-col gap-2.5 w-full lg:w-auto shrink-0 justify-center">
+              <a
+                href="https://prod-ambuluwawa-main-web.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full lg:w-48 py-3.5 px-6 rounded-full bg-white hover:bg-[#FAF7F0] text-[#001229] text-xs uppercase tracking-[0.2em] font-bold shadow-2xl transition-all flex items-center justify-center space-x-2 border border-white/80 hover:scale-105"
+              >
+                <Ticket className="w-4 h-4 text-[#004495]" />
+                <span>Book Ticket</span>
+              </a>
+
+              <button
+                onClick={() => setVideoModalOpen(true)}
+                className="w-full lg:w-48 py-3 px-6 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-xs uppercase tracking-[0.16em] font-medium border border-white/25 transition-all flex items-center justify-center space-x-2"
+              >
+                <Play className="w-3.5 h-3.5 text-[#C5A880] fill-current" />
+                <span>Watch Video</span>
+              </button>
+            </div>
+
           </div>
         </div>
       </section>
@@ -87,8 +161,8 @@ export default function Hero() {
       {/* Video Modal (YouTube Player for https://youtu.be/XDMWG0VO3sg) */}
       {videoModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-          <div className="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/15">
-            <div className="flex items-center justify-between p-4 bg-[#001229] text-white border-b border-white/10">
+          <div className="relative w-full max-w-4xl bg-[#001229] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+            <div className="flex items-center justify-between p-4 bg-[#000D20] text-white border-b border-white/10">
               <div className="flex items-center space-x-2">
                 <Mountain className="w-4 h-4 text-[#C5A880]" />
                 <span className="font-serif text-lg tracking-wide">Ambuluwawa Peak Video</span>
