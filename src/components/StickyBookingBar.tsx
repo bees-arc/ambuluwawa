@@ -42,9 +42,9 @@ export default function StickyBookingBar() {
             href="https://prod-ambuluwawa-main-web.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="fs-btn px-4 py-2.5 bg-[#004495] hover:bg-[#002D62] text-white text-xs uppercase tracking-[0.16em] font-semibold rounded-full shadow flex items-center space-x-1.5 border border-[#0055BA]"
+            className="px-4 py-2 bg-white text-[#001229] text-xs uppercase tracking-[0.16em] font-bold rounded-full shadow-lg flex items-center space-x-1.5"
           >
-            <Ticket className="w-3.5 h-3.5 text-[#C5A880]" />
+            <Ticket className="w-3.5 h-3.5 text-[#004495]" />
             <span>Book Ticket</span>
           </a>
         </div>

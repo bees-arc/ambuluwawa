@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#001229] text-[#FAF7F0] pt-20 pb-12 overflow-hidden border-t border-[#0C2A50]">
+    <footer className="relative bg-[#000A18] text-[#FAF7F0] pt-20 pb-12 overflow-hidden border-t border-white/10">
       {/* Background with Ambient Mountain Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -34,7 +34,7 @@ export default function Footer() {
           className="object-cover object-top opacity-15"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#001229]/92" />
+        <div className="absolute inset-0 bg-[#000A18]/94" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

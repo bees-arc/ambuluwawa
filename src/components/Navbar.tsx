@@ -39,66 +39,56 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-[#FBF9F5]/95 backdrop-blur-md shadow-sm border-b border-[#E2D9CC] py-3.5 text-[#001C3D]"
-            : "bg-gradient-to-b from-[#001229]/90 via-[#001229]/60 to-transparent py-5 text-white"
+            ? "bg-[#000D20]/95 backdrop-blur-md shadow-2xl border-b border-white/10 py-3.5 text-white"
+            : "bg-gradient-to-b from-[#000D20]/90 via-[#000D20]/60 to-transparent py-5 text-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo & Brand Identity */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full p-1 border border-[#C5A880]/50 bg-[#001C3D]/60 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full p-1 border border-white/30 bg-[#00142C] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="https://ambuluwawa.com/wp-content/uploads/2024/01/Group-2-300x300.png"
                 alt="Ambuluwawa Emblem"
-                width={44}
-                height={44}
+                width={40}
+                height={40}
                 className="object-contain"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-serif text-xl sm:text-2xl font-light tracking-[0.14em] uppercase transition-colors ${
-                isScrolled ? "text-[#001C3D]" : "text-white"
-              }`}>
+              <span className="font-serif text-lg sm:text-xl font-light tracking-[0.14em] uppercase text-white">
                 Ambuluwawa
               </span>
-              <span className={`text-[9px] uppercase tracking-[0.25em] font-medium transition-colors ${
-                isScrolled ? "text-[#004495]" : "text-[#DCE7F5]"
-              }`}>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] font-medium text-[#C5A880]">
                 Bio Diversity Complex
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links (Exact from ambuluwawa.com) */}
-          <nav className="hidden xl:flex items-center space-x-6">
+          <nav className="hidden xl:flex items-center space-x-7">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
                 rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`text-[12px] uppercase tracking-[0.15em] font-medium transition-all relative py-1 hover:text-[#004495] group ${
-                  isScrolled ? "text-[#1A2838]" : "text-[#F0EBE1]"
-                }`}
+                className="text-[11px] uppercase tracking-[0.18em] font-medium transition-all relative py-1 text-white/80 hover:text-white group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#004495] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#C5A880] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
 
-          {/* Header Action Buttons: Login & Book Ticket */}
-          <div className="hidden sm:flex items-center space-x-3.5">
+          {/* Header Action Buttons: Login & Book Ticket (Reference Pill Button Style) */}
+          <div className="hidden sm:flex items-center space-x-3">
             <a
               href="https://hub.ambuluwawa.com/login"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-[11px] uppercase tracking-[0.18em] font-semibold px-5 py-2.5 rounded-full border transition-all flex items-center space-x-1.5 ${
-                isScrolled
-                  ? "border-[#001C3D]/30 text-[#001C3D] hover:bg-[#001C3D] hover:text-white"
-                  : "border-white/30 text-white hover:bg-white/10"
-              }`}
+              className="text-[11px] uppercase tracking-[0.18em] font-medium px-4 py-2 rounded-full border border-white/20 text-white/90 hover:bg-white/10 transition-all flex items-center space-x-1.5"
             >
               <User className="w-3.5 h-3.5 text-[#C5A880]" />
               <span>Login</span>
@@ -108,10 +98,10 @@ export default function Navbar() {
               href="https://prod-ambuluwawa-main-web.web.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="fs-btn px-6 py-2.5 bg-[#004495] hover:bg-[#001C3D] text-white text-[11px] uppercase tracking-[0.18em] font-semibold rounded-full shadow transition-all flex items-center space-x-2 border border-[#0055BA]"
+              className="px-5 py-2 rounded-full bg-white hover:bg-[#FAF7F0] text-[#001229] text-[11px] uppercase tracking-[0.18em] font-bold shadow-lg transition-all flex items-center space-x-1.5 hover:scale-105"
             >
-              <Ticket className="w-3.5 h-3.5 text-[#C5A880]" />
-              <span>Book Ticket</span>
+              <Ticket className="w-3.5 h-3.5 text-[#004495]" />
+              <span>Book</span>
             </a>
           </div>
 
@@ -119,11 +109,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation"
-            className={`xl:hidden p-2.5 rounded-full border transition-colors ${
-              isScrolled 
-                ? "border-[#D8CFBF] text-[#001C3D] bg-white/80" 
-                : "border-white/30 text-white bg-black/40"
-            }`}
+            className="xl:hidden p-2 rounded-full border border-white/30 text-white bg-black/40 hover:bg-white/10 transition-colors"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
