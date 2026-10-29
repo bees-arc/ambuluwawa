@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ export default function GallerySection() {
     },
     {
       src: "https://ambuluwawa.com/wp-content/uploads/2024/06/a2.webp",
-      title: "Java Lounge Mountain Café",
+      title: "Java Lounge Mountain CafÃ©",
       caption: "Artisan Ceylon brews and serene reflection points overlooking emerald tea valleys.",
       span: "md:col-span-1 md:row-span-1",
     },
@@ -73,7 +73,7 @@ export default function GallerySection() {
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#162F21] leading-tight mb-5">
             The Ambuluwawa Visual Anthology
           </h2>
-          <div className="w-16 h-[1.5px] bg-[#C5A880] mx-auto mb-6" />
+          <div className="w-16 h-[1.5px] bg-[#BFD8F0] mx-auto mb-6" />
           <p className="text-[#5D6B63] text-sm sm:text-base font-light leading-relaxed">
             From the dizzying spirals of the summit to peaceful moments in shaded pine forests, 
             explore the captivating beauty captured by travelers and photographers.
@@ -104,7 +104,7 @@ export default function GallerySection() {
 
               {/* Title & Caption */}
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-[#C5A880] font-semibold mb-1">
+                <div className="text-[10px] uppercase tracking-[0.2em] text-[#BFD8F0] font-semibold mb-1">
                   Ambuluwawa Archives
                 </div>
                 <h4 className="font-serif text-lg sm:text-xl font-light leading-snug">
@@ -118,7 +118,7 @@ export default function GallerySection() {
         {/* Social Prompt */}
         <div className="mt-12 text-center">
           <p className="text-xs text-[#7B8B82] tracking-wide flex items-center justify-center">
-            <Camera className="w-4 h-4 mr-1.5 text-[#C5A880]" />
+            <Camera className="w-4 h-4 mr-1.5 text-[#BFD8F0]" />
             <span>Tag your moments with <strong>#Ambuluwawa</strong> on Instagram and TikTok to be featured</span>
           </p>
         </div>

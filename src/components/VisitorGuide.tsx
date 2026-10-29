@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { 
@@ -48,9 +48,9 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#162F21] leading-tight mb-5">
             Planning Your Ascent
           </h2>
-          <div className="w-16 h-[1.5px] bg-[#C5A880] mx-auto mb-6" />
+          <div className="w-16 h-[1.5px] bg-[#BFD8F0] mx-auto mb-6" />
           <p className="text-[#5B6B62] text-sm sm:text-base font-light leading-relaxed">
-            Everything you need for an effortless, exhilarating visit — from live admission fees 
+            Everything you need for an effortless, exhilarating visit â€” from live admission fees 
             and opening hours to safety guidelines for the spiral climb.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
             {/* Opening Hours Card */}
             <div className="bg-[#FFFFFF] rounded-[4px] border border-[#E3D9C7] p-7 sm:p-8 fs-card-shadow">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 rounded-[3px] bg-[#162F21] text-[#C5A880] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-[3px] bg-[#162F21] text-[#BFD8F0] flex items-center justify-center">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
@@ -104,7 +104,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
             {/* Climbing Safety & Guidelines */}
             <div className="bg-[#FFFFFF] rounded-[4px] border border-[#E3D9C7] p-7 sm:p-8 fs-card-shadow flex-grow">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 rounded-[3px] bg-[#C5A880] text-[#122319] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-[3px] bg-[#BFD8F0] text-[#122319] flex items-center justify-center">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
 
               <div className="space-y-4 text-xs sm:text-sm text-[#55635A]">
                 <div className="flex items-start space-x-3">
-                  <Footprints className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                  <Footprints className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#162F21] font-medium">Comfortable Footwear:</strong>
                     <span className="ml-1 text-[#66776E]">Wear sports sneakers or walking shoes with sturdy grip. Avoid flip-flops or high heels.</span>
@@ -125,7 +125,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <AlertCircle className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                  <AlertCircle className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#162F21] font-medium">Light Travel:</strong>
                     <span className="ml-1 text-[#66776E]">Avoid carrying large backpacks. The upper 15m spiral path is narrow and single-file.</span>
@@ -133,7 +133,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <Wind className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                  <Wind className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#162F21] font-medium">Highland Winds:</strong>
                     <span className="ml-1 text-[#66776E]">Gale winds can develop quickly near the peak. Secure hats, lenses, and mobile phones firmly.</span>
@@ -141,10 +141,10 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <SunMedium className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                  <SunMedium className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#162F21] font-medium">Best Timing:</strong>
-                    <span className="ml-1 text-[#66776E]">Early mornings (08:00 AM – 10:30 AM) offer the crispest 360° visibility before afternoon cloud cover.</span>
+                    <span className="ml-1 text-[#66776E]">Early mornings (08:00 AM â€“ 10:30 AM) offer the crispest 360Â° visibility before afternoon cloud cover.</span>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
           <div className="lg:col-span-6 bg-[#162F21] text-[#FAF7F0] rounded-[4px] border border-[#274B36] p-7 sm:p-10 flex flex-col justify-between shadow-2xl">
             <div>
               <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#294D38]">
-                <div className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] text-[#C5A880] font-semibold">
+                <div className="flex items-center space-x-2 text-[11px] uppercase tracking-[0.2em] text-[#BFD8F0] font-semibold">
                   <Ticket className="w-4 h-4" />
                   <span>Admission Tariff &amp; Estimator</span>
                 </div>
@@ -186,7 +186,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                     >
                       -
                     </button>
-                    <span className="font-serif text-lg text-[#C5A880] w-6 text-center">
+                    <span className="font-serif text-lg text-[#BFD8F0] w-6 text-center">
                       {localAdults}
                     </span>
                     <button
@@ -211,7 +211,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                     >
                       -
                     </button>
-                    <span className="font-serif text-lg text-[#C5A880] w-6 text-center">
+                    <span className="font-serif text-lg text-[#BFD8F0] w-6 text-center">
                       {localChildren}
                     </span>
                     <button
@@ -236,7 +236,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                     >
                       -
                     </button>
-                    <span className="font-serif text-lg text-[#C5A880] w-6 text-center">
+                    <span className="font-serif text-lg text-[#BFD8F0] w-6 text-center">
                       {foreignAdults}
                     </span>
                     <button
@@ -261,7 +261,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                     >
                       -
                     </button>
-                    <span className="font-serif text-lg text-[#C5A880] w-6 text-center">
+                    <span className="font-serif text-lg text-[#BFD8F0] w-6 text-center">
                       {foreignChildren}
                     </span>
                     <button
@@ -282,7 +282,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                   <span className="text-[11px] uppercase tracking-[0.16em] text-[#A6B8AC] block">
                     Estimated Total Tariff
                   </span>
-                  <span className="text-xs text-[#C5A880]">Inclusive of all sanctuary taxes</span>
+                  <span className="text-xs text-[#BFD8F0]">Inclusive of all sanctuary taxes</span>
                 </div>
                 <div className="text-right">
                   <div className="font-serif text-3xl sm:text-4xl font-light text-white">
@@ -294,7 +294,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 <button
                   onClick={onOpenBooking}
-                  className="fs-btn w-full py-3.5 bg-[#C5A880] hover:bg-[#D4BA95] text-[#122319] text-xs uppercase tracking-[0.2em] font-semibold rounded-[3px] shadow transition-all flex items-center justify-center space-x-2"
+                  className="fs-btn w-full py-3.5 bg-[#BFD8F0] hover:bg-[#DCEBF8] text-[#122319] text-xs uppercase tracking-[0.2em] font-semibold rounded-[3px] shadow transition-all flex items-center justify-center space-x-2"
                 >
                   <CreditCard className="w-4 h-4" />
                   <span>Reserve Online Now</span>
@@ -307,7 +307,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                   className="w-full sm:w-auto px-4 py-3.5 rounded-[3px] border border-white/20 hover:bg-white/10 text-white text-xs uppercase tracking-[0.15em] font-medium text-center transition-all flex items-center justify-center space-x-1"
                 >
                   <span>Portal</span>
-                  <ExternalLink className="w-3.5 h-3.5 text-[#C5A880]" />
+                  <ExternalLink className="w-3.5 h-3.5 text-[#BFD8F0]" />
                 </a>
               </div>
             </div>

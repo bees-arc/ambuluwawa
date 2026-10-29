@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default function SanctuaryOverview() {
       icon: Flag,
       tag: "55m Summit Spire",
       title: "55 Steps to Limitless Horizons",
-      desc: "Climb the tower’s spiral staircase, only 55 meters tall, and be rewarded with majestic views that soar far beyond."
+      desc: "Climb the towerâ€™s spiral staircase, only 55 meters tall, and be rewarded with majestic views that soar far beyond."
     },
     {
       icon: Eye,
@@ -61,10 +61,10 @@ export default function SanctuaryOverview() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#000D20] text-[#FAF7F0] relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-[#0B2545] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Divider Header (Exact Reference Style: "—— ABOUT THE TOUR ——") */}
+        {/* Section Divider Header (Exact Reference Style: "â€”â€” ABOUT THE TOUR â€”â€”") */}
         <div className="flex items-center space-x-4 mb-14 sm:mb-16">
           <div className="w-10 sm:w-16 h-[1px] bg-white/30 shrink-0" />
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.25em] text-white shrink-0">
@@ -80,33 +80,33 @@ export default function SanctuaryOverview() {
           <div className="lg:col-span-5 space-y-6">
             <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight">
               Leave the World Below <br />
-              <span className="italic font-normal text-[#C5A880]">Embrace the World Above</span>
+              <span className="italic font-normal text-[#BFD8F0]">Embrace the World Above</span>
             </h3>
 
             <div className="space-y-4 text-sm sm:text-base text-white/80 font-light leading-relaxed">
               <p>
-                We&apos;ve organized a seamless mountain journey for your visit to Ambuluwawa. You&apos;ll experience Sri Lanka&apos;s most celebrated 360-degree viewpoint, perched at <span className="text-[#C5A880] font-medium">3,567 feet</span> above sea level in Gampola.
+                We&apos;ve organized a seamless mountain journey for your visit to Ambuluwawa. You&apos;ll experience Sri Lanka&apos;s most celebrated 360-degree viewpoint, perched at <span className="text-[#BFD8F0] font-medium">3,567 feet</span> above sea level in Gampola.
               </p>
               <p>
                 Exploring its essence, Ambuluwawa unfolds as more than just the tower&apos;s name; it embodies the towering mountain, where human craftsmanship meets the awe-inspiring beauty of nature.
               </p>
               <p className="text-white/90">
-                No need to worry about schedules or planning — everything is organized. We provide direct digital entry passes, safari transit, and clearly marked trails so you can simply <span className="text-[#C5A880] font-semibold underline underline-offset-4 decoration-[#C5A880]/50">enjoy the journey</span>.
+                No need to worry about schedules or planning â€” everything is organized. We provide direct digital entry passes, safari transit, and clearly marked trails so you can simply <span className="text-[#BFD8F0] font-semibold underline underline-offset-4 decoration-[#BFD8F0]/50">enjoy the journey</span>.
               </p>
             </div>
 
             {/* 3 Metric Pills */}
             <div className="grid grid-cols-3 gap-3 pt-4 text-center">
               <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
-                <div className="font-serif text-xl sm:text-2xl text-[#C5A880] font-light">3,567 FT</div>
+                <div className="font-serif text-xl sm:text-2xl text-[#BFD8F0] font-light">3,567 FT</div>
                 <div className="text-[9px] uppercase tracking-[0.16em] text-white/60 mt-0.5">Peak Height</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
-                <div className="font-serif text-xl sm:text-2xl text-[#C5A880] font-light">55 M</div>
+                <div className="font-serif text-xl sm:text-2xl text-[#BFD8F0] font-light">55 M</div>
                 <div className="text-[9px] uppercase tracking-[0.16em] text-white/60 mt-0.5">Spiral Spire</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
-                <div className="font-serif text-xl sm:text-2xl text-[#C5A880] font-light">360°</div>
+                <div className="font-serif text-xl sm:text-2xl text-[#BFD8F0] font-light">360Â°</div>
                 <div className="text-[9px] uppercase tracking-[0.16em] text-white/60 mt-0.5">Highland View</div>
               </div>
             </div>
@@ -115,19 +115,19 @@ export default function SanctuaryOverview() {
           {/* Right Column: Connected Timeline with Visual Photos (Exact Reference Style) */}
           <div className="lg:col-span-7 relative pl-4 sm:pl-8">
             {/* Vertical Line Connector */}
-            <div className="absolute left-6 sm:left-10 top-6 bottom-10 w-[1.5px] bg-gradient-to-b from-[#C5A880] via-white/30 to-white/10" />
+            <div className="absolute left-6 sm:left-10 top-6 bottom-10 w-[1.5px] bg-gradient-to-b from-[#BFD8F0] via-white/30 to-white/10" />
 
             <div className="space-y-10 sm:space-y-12">
               {journeyStages.map((stg, i) => (
                 <div key={stg.stage} className="relative flex flex-col sm:flex-row items-start gap-5 group">
                   {/* Timeline Dot Node */}
-                  <div className="w-5 h-5 rounded-full bg-[#000D20] border-2 border-[#C5A880] flex items-center justify-center shrink-0 z-10 -ml-[10px] sm:-ml-[10px] mt-1 group-hover:scale-125 transition-transform">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
+                  <div className="w-5 h-5 rounded-full bg-[#0B2545] border-2 border-[#BFD8F0] flex items-center justify-center shrink-0 z-10 -ml-[10px] sm:-ml-[10px] mt-1 group-hover:scale-125 transition-transform">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#BFD8F0]" />
                   </div>
 
                   {/* Stage Text & Details */}
                   <div className="flex-grow">
-                    <div className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#C5A880] mb-1">
+                    <div className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#BFD8F0] mb-1">
                       {stg.stage}
                     </div>
                     <h4 className="text-lg sm:text-xl font-normal text-white mb-1.5">
@@ -139,7 +139,7 @@ export default function SanctuaryOverview() {
                   </div>
 
                   {/* Floating Photo Card */}
-                  <div className="relative w-full sm:w-44 h-28 sm:h-28 rounded-2xl overflow-hidden border border-white/20 shrink-0 shadow-xl group-hover:border-[#C5A880] transition-colors">
+                  <div className="relative w-full sm:w-44 h-28 sm:h-28 rounded-2xl overflow-hidden border border-white/20 shrink-0 shadow-xl group-hover:border-[#BFD8F0] transition-colors">
                     <Image
                       src={stg.img}
                       alt={stg.title}
@@ -147,7 +147,7 @@ export default function SanctuaryOverview() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, 180px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#000D20]/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/60 to-transparent" />
                   </div>
                 </div>
               ))}
@@ -163,14 +163,14 @@ export default function SanctuaryOverview() {
             return (
               <div
                 key={pillar.title}
-                className="group p-6 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.07] hover:border-[#C5A880]/50 transition-all duration-300 flex flex-col justify-between"
+                className="group p-6 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.07] hover:border-[#BFD8F0]/50 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-full bg-white/10 text-[#C5A880] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-white/10 text-[#BFD8F0] flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[9px] uppercase tracking-[0.16em] text-[#C5A880] font-semibold bg-white/5 px-2.5 py-1 rounded-full border border-white/10">
+                    <span className="text-[9px] uppercase tracking-[0.16em] text-[#BFD8F0] font-semibold bg-white/5 px-2.5 py-1 rounded-full border border-white/10">
                       {pillar.tag}
                     </span>
                   </div>
@@ -183,7 +183,7 @@ export default function SanctuaryOverview() {
                   </p>
                 </div>
 
-                <div className="pt-4 mt-5 border-t border-white/10 flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#C5A880]">
+                <div className="pt-4 mt-5 border-t border-white/10 flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#BFD8F0]">
                   <span>Experience</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                 </div>

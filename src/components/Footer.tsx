@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#000A18] text-[#FAF7F0] pt-20 pb-12 overflow-hidden border-t border-white/10">
+    <footer className="relative bg-[#091D3A] text-[#FAF7F0] pt-20 pb-12 overflow-hidden border-t border-white/10">
       {/* Background with Ambient Mountain Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -34,7 +34,7 @@ export default function Footer() {
           className="object-cover object-top opacity-15"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#000A18]/94" />
+        <div className="absolute inset-0 bg-[#091D3A]/94" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -42,7 +42,7 @@ export default function Footer() {
         {/* Top Footer Row: Logo & Back to Top */}
         <div className="flex flex-col sm:flex-row items-center justify-between pb-10 mb-12 border-b border-[#0D2E55] gap-6 text-center sm:text-left">
           <Link href="/" className="flex items-center space-x-3.5">
-            <div className="relative w-12 h-12 rounded-full p-1 border border-[#C5A880]/50 bg-[#001C3D] flex items-center justify-center">
+            <div className="relative w-12 h-12 rounded-full p-1 border border-[#BFD8F0]/50 bg-[#001C3D] flex items-center justify-center">
               <Image
                 src="https://ambuluwawa.com/wp-content/uploads/2024/01/Group-2-300x300.png"
                 alt="Ambuluwawa Emblem"
@@ -55,7 +55,7 @@ export default function Footer() {
               <div className="font-serif text-2xl font-light tracking-[0.1em] uppercase text-white">
                 Ambuluwawa
               </div>
-              <div className="text-[9px] uppercase tracking-[0.25em] text-[#C5A880] font-medium">
+              <div className="text-[9px] uppercase tracking-[0.25em] text-[#BFD8F0] font-medium">
                 Bio Diversity Complex
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
 
           <button
             onClick={scrollToTop}
-            className="px-5 py-2.5 rounded-full border border-[#143E6F] hover:border-[#C5A880] text-xs uppercase tracking-[0.18em] text-[#C2D7ED] hover:text-[#C5A880] transition-colors flex items-center space-x-2 bg-[#001C3D]/60"
+            className="px-5 py-2.5 rounded-full border border-[#143E6F] hover:border-[#BFD8F0] text-xs uppercase tracking-[0.18em] text-[#C2D7ED] hover:text-[#BFD8F0] transition-colors flex items-center space-x-2 bg-[#001C3D]/60"
           >
             <span>Back to Top</span>
             <ArrowUp className="w-3.5 h-3.5" />
@@ -87,20 +87,20 @@ export default function Footer() {
             {/* Exact Contact Details & Address */}
             <div className="space-y-3 font-light pt-2">
               <div className="flex items-start space-x-2.5">
-                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                 <span className="text-[#C5D9ED]">
                   Ambuluwawa Biodiversity Complex, Gampola 20500
                 </span>
               </div>
               <div className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-[#C5A880] shrink-0" />
-                <a href="tel:+94712724724" className="hover:text-[#C5A880] transition-colors">
+                <Phone className="w-4 h-4 text-[#BFD8F0] shrink-0" />
+                <a href="tel:+94712724724" className="hover:text-[#BFD8F0] transition-colors">
                   +94 71 272 4724
                 </a>
               </div>
               <div className="flex items-center space-x-2.5">
-                <Mail className="w-4 h-4 text-[#C5A880] shrink-0" />
-                <a href="mailto:info@ambuluwawa.com" className="hover:text-[#C5A880] transition-colors">
+                <Mail className="w-4 h-4 text-[#BFD8F0] shrink-0" />
+                <a href="mailto:info@ambuluwawa.com" className="hover:text-[#BFD8F0] transition-colors">
                   Info@ambuluwawa.com
                 </a>
               </div>
@@ -114,22 +114,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 font-light text-xs">
               <li>
-                <a href="https://ambuluwawa.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Home</a>
+                <a href="https://ambuluwawa.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Home</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/gallery/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Gallery</a>
+                <a href="https://ambuluwawa.com/gallery/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Gallery</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/tenders/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Tenders</a>
+                <a href="/tenders" className="hover:text-[#BFD8F0] transition-colors">Tenders</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/notice" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Notices</a>
+                <a href="https://ambuluwawa.com/notice" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Notices</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/our-team/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Our Team</a>
+                <a href="https://ambuluwawa.com/our-team/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Our Team</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Blog</a>
+                <a href="https://ambuluwawa.com/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Blog</a>
               </li>
             </ul>
           </div>
@@ -141,19 +141,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 font-light text-xs">
               <li>
-                <a href="https://ambuluwawa.com/things-to-do/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Things to do</a>
+                <a href="https://ambuluwawa.com/things-to-do/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Things to do</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/where-to-stay/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Where to stay</a>
+                <a href="https://ambuluwawa.com/where-to-stay/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Where to stay</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/faq-2/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">FAQ</a>
+                <a href="https://ambuluwawa.com/faq-2/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">FAQ</a>
               </li>
               <li>
-                <a href="https://ambuluwawa.com/weather/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Local Weather</a>
+                <a href="https://ambuluwawa.com/weather/" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Local Weather</a>
               </li>
               <li>
-                <a href="https://hub.ambuluwawa.com/login" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">Portal Login</a>
+                <a href="https://hub.ambuluwawa.com/login" target="_blank" rel="noopener noreferrer" className="hover:text-[#BFD8F0] transition-colors">Portal Login</a>
               </li>
             </ul>
           </div>
@@ -183,21 +183,21 @@ export default function Footer() {
                   placeholder="Your email address"
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-full bg-[#001C3D] border border-[#143E6F] text-xs text-white focus:outline-none focus:border-[#C5A880] transition-colors"
+                  className="w-full px-4 py-2.5 rounded-full bg-[#001C3D] border border-[#143E6F] text-xs text-white focus:outline-none focus:border-[#BFD8F0] transition-colors"
                 />
                 <button
                   type="submit"
                   className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-[#004495] hover:bg-[#002D62] text-white text-xs uppercase tracking-[0.15em] font-semibold transition-all border border-[#0055BA] flex items-center justify-center space-x-1.5 shrink-0"
                 >
                   <span>Subscribe</span>
-                  <Send className="w-3 h-3 text-[#C5A880]" />
+                  <Send className="w-3 h-3 text-[#BFD8F0]" />
                 </button>
               </form>
             )}
 
             {/* Social Channels */}
             <div className="pt-2">
-              <div className="text-[10px] uppercase tracking-[0.2em] text-[#C5A880] font-semibold mb-2">
+              <div className="text-[10px] uppercase tracking-[0.2em] text-[#BFD8F0] font-semibold mb-2">
                 Follow Ambuluwawa
               </div>
               <div className="flex items-center space-x-2.5">
@@ -251,7 +251,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-6 text-[10px] tracking-wide">
             <span>Sri Lanka Tourism</span>
-            <span>•</span>
+            <span>â€¢</span>
             <span>Bio Diversity Complex</span>
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @layer base {
   :root {
@@ -9,20 +9,20 @@
     --color-cream: #F4EFE6;
     --color-sand: #EAE3D5;
     --color-stone: #E1DACB;
-    --color-gold: #C5A880;
-    --color-gold-hover: #D4BA95;
-    --color-gold-dark: #A6875E;
+    --color-gold: #BFD8F0;
+    --color-gold-hover: #DCEBF8;
+    --color-gold-dark: #8FB3D6;
     
     /* Luxury Dark Navy Palette (Replacing black from reference design) */
-    --color-navy-deep: #000B1A;
-    --color-navy: #001229;
+    --color-navy-deep: #0A2142;
+    --color-navy: #102F57;
     --color-navy-card: rgba(255, 255, 255, 0.05);
     --color-navy-card-border: rgba(255, 255, 255, 0.12);
     --color-navy-primary: #004495;
     --color-navy-soft: #082247;
-    --color-gold: #C5A880;
-    --color-gold-hover: #D4BA95;
-    --color-gold-dark: #A6875E;
+    --color-gold: #BFD8F0;
+    --color-gold-hover: #DCEBF8;
+    --color-gold-dark: #8FB3D6;
     --color-charcoal: #FAF7F0;
   }
 
@@ -31,7 +31,7 @@
   }
 
   body {
-    background-color: #000D20;
+    background-color: #0B2545;
     color: #FAF7F0;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -56,11 +56,11 @@
 
 .fs-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(197, 168, 128, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(191, 216, 240, 0.4), transparent);
 }
 
 .fs-border {
-  border: 1px solid rgba(197, 168, 128, 0.22);
+  border: 1px solid rgba(191, 216, 240, 0.22);
 }
 
 .fs-card-shadow {

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -8,12 +8,12 @@ export default function ExperiencesGrid() {
   const experiences = [
     {
       id: "java-lounge",
-      category: "Scenic Mountain Café",
+      category: "Scenic Mountain CafÃ©",
       title: "Java Lounge",
       desc: "Coffee, serenity, and breathtaking panoramas at the mountain summit.",
       img: "https://ambuluwawa.com/wp-content/uploads/2024/06/a2.webp",
       icon: Coffee,
-      highlight: "Highest coffee deck in Sri Lanka with 360° cloud views",
+      highlight: "Highest coffee deck in Sri Lanka with 360Â° cloud views",
       colSpan: "lg:col-span-8",
       aspectRatio: "h-72 sm:h-80 lg:h-96",
     },
@@ -53,7 +53,7 @@ export default function ExperiencesGrid() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#000D20] text-[#FAF7F0] relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-[#0B2545] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Divider Header (Exact Reference Style) */}
@@ -68,7 +68,7 @@ export default function ExperiencesGrid() {
         {/* Narrative Intro */}
         <div className="max-w-2xl mb-12">
           <h3 className="font-serif text-3xl sm:text-4xl font-light text-white leading-tight mb-3">
-            Find <span className="italic font-normal text-[#C5A880]">Adventure &amp; Expedition</span> Beyond the Tower
+            Find <span className="italic font-normal text-[#BFD8F0]">Adventure &amp; Expedition</span> Beyond the Tower
           </h3>
           <p className="text-sm text-white/70 font-light leading-relaxed">
             Step beyond the tower and immerse yourself in the beauty of Ambuluwawa, where countless wonders are within minutes&apos; reach.
@@ -82,10 +82,10 @@ export default function ExperiencesGrid() {
             return (
               <div
                 key={item.id}
-                className={`${item.colSpan} group bg-white/[0.04] rounded-3xl overflow-hidden border border-white/15 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-[#C5A880]/60 hover:bg-white/[0.07]`}
+                className={`${item.colSpan} group bg-white/[0.04] rounded-3xl overflow-hidden border border-white/15 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-[#BFD8F0]/60 hover:bg-white/[0.07]`}
               >
                 {/* Visual Image with Curved Overlays */}
-                <div className={`relative ${item.aspectRatio} w-full overflow-hidden bg-[#001229]`}>
+                <div className={`relative ${item.aspectRatio} w-full overflow-hidden bg-[#102F57]`}>
                   <Image
                     src={item.img}
                     alt={item.title}
@@ -93,11 +93,11 @@ export default function ExperiencesGrid() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545] via-transparent to-transparent opacity-80" />
                   
                   {/* Category Pill with Curved Edges */}
-                  <div className="absolute top-4 left-4 inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-[#000D20]/80 backdrop-blur-md border border-white/20 text-[#FAF7F0] text-[10px] uppercase tracking-[0.16em] font-semibold">
-                    <Icon className="w-3.5 h-3.5 text-[#C5A880]" />
+                  <div className="absolute top-4 left-4 inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-[#0B2545]/80 backdrop-blur-md border border-white/20 text-[#FAF7F0] text-[10px] uppercase tracking-[0.16em] font-semibold">
+                    <Icon className="w-3.5 h-3.5 text-[#BFD8F0]" />
                     <span>{item.category}</span>
                   </div>
 
@@ -108,7 +108,7 @@ export default function ExperiencesGrid() {
 
                   {/* Micro Highlight Tag */}
                   <div className="absolute bottom-4 left-4 right-4 text-xs text-white/90 font-light">
-                    <span className="bg-[#000D20]/80 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/10 inline-block">
+                    <span className="bg-[#0B2545]/80 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/10 inline-block">
                       {item.highlight}
                     </span>
                   </div>
@@ -117,7 +117,7 @@ export default function ExperiencesGrid() {
                 {/* Content */}
                 <div className="p-7 sm:p-8 flex flex-col justify-between flex-grow">
                   <div>
-                    <h4 className="font-serif text-2xl sm:text-3xl font-light text-white mb-2 group-hover:text-[#C5A880] transition-colors">
+                    <h4 className="font-serif text-2xl sm:text-3xl font-light text-white mb-2 group-hover:text-[#BFD8F0] transition-colors">
                       {item.title}
                     </h4>
                     <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
@@ -125,9 +125,9 @@ export default function ExperiencesGrid() {
                     </p>
                   </div>
 
-                  <div className="pt-5 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-[#C5A880] font-semibold">
+                  <div className="pt-5 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-[#BFD8F0] font-semibold">
                     <div className="flex items-center space-x-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-[#C5A880]" />
+                      <MapPin className="w-3.5 h-3.5 text-[#BFD8F0]" />
                       <span className="text-white/80">Ambuluwawa Peak Sanctuary</span>
                     </div>
                     <span className="text-[10px] uppercase tracking-[0.18em]">Explore</span>

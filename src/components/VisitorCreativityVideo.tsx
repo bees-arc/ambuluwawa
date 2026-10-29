@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export default function VisitorCreativityVideo() {
 
   return (
     <>
-      <section className="relative py-24 sm:py-32 bg-[#000D20] text-white overflow-hidden">
+      <section className="relative py-24 sm:py-32 bg-[#0B2545] text-white overflow-hidden">
         {/* Background Visual */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -19,7 +19,7 @@ export default function VisitorCreativityVideo() {
             className="object-cover object-center opacity-30 scale-105"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#000D20] via-[#000D20]/75 to-[#000D20]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545] via-[#0B2545]/75 to-[#0B2545]" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -34,22 +34,22 @@ export default function VisitorCreativityVideo() {
           </div>
 
           {/* Curved Bento Glass Showcase Container */}
-          <div className="bg-[#001229]/80 backdrop-blur-xl border border-white/20 rounded-3xl p-8 sm:p-14 shadow-2xl">
+          <div className="bg-[#102F57]/80 backdrop-blur-xl border border-white/20 rounded-3xl p-8 sm:p-14 shadow-2xl">
             {/* Circular Glowing Play Button */}
             <div className="mb-8 flex justify-center">
               <button
                 onClick={() => setVideoOpen(true)}
                 aria-label="Play Ambuluwawa Video"
-                className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white text-[#001229] flex items-center justify-center shadow-2xl transition-transform hover:scale-110 group border-2 border-white/40"
+                className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white text-[#102F57] flex items-center justify-center shadow-2xl transition-transform hover:scale-110 group border-2 border-white/40"
               >
                 <div className="absolute inset-0 rounded-full bg-white/20 animate-ping pointer-events-none" />
-                <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current text-[#001229] ml-1 group-hover:scale-105 transition-transform" />
+                <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current text-[#102F57] ml-1 group-hover:scale-105 transition-transform" />
               </button>
             </div>
 
             {/* Exact Text from ambuluwawa.com */}
             <p className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-[#FAF7F0] leading-relaxed max-w-3xl mx-auto mb-8">
-              &ldquo;Grasping Ambuluwawa’s splendor poses challenges, yet our visitors skillfully craft personalized narratives through their lenses, creativity, and social media.&rdquo;
+              &ldquo;Grasping Ambuluwawaâ€™s splendor poses challenges, yet our visitors skillfully craft personalized narratives through their lenses, creativity, and social media.&rdquo;
             </p>
 
             {/* Exact Button from ambuluwawa.com with solid white pill button */}
@@ -58,7 +58,7 @@ export default function VisitorCreativityVideo() {
                 href="https://www.tiktok.com/search?q=ambuluwawa&t=1703687807759"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-8 py-3.5 bg-white hover:bg-[#FAF7F0] text-[#001229] text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-2xl transition-all hover:scale-105"
+                className="inline-flex items-center space-x-2 px-8 py-3.5 bg-white hover:bg-[#FAF7F0] text-[#102F57] text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-2xl transition-all hover:scale-105"
               >
                 <span>Witness Their Creativity</span>
                 <ExternalLink className="w-3.5 h-3.5 text-[#004495]" />
@@ -72,8 +72,8 @@ export default function VisitorCreativityVideo() {
       {/* Video Popup Modal */}
       {videoOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-fade-in">
-          <div className="relative w-full max-w-4xl bg-[#001229] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-            <div className="flex items-center justify-between p-4 bg-[#000D20] text-white border-b border-white/10">
+          <div className="relative w-full max-w-4xl bg-[#102F57] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+            <div className="flex items-center justify-between p-4 bg-[#0B2545] text-white border-b border-white/10">
               <span className="font-serif text-lg tracking-wide text-white">Ambuluwawa Cinematic Video</span>
               <button
                 onClick={() => setVideoOpen(false)}

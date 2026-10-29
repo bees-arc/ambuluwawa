@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { X, Calendar, Users, Compass, CheckCircle2, CreditCard, ExternalLink, ShieldCheck } from "lucide-react";
@@ -12,7 +12,7 @@ interface BookingModalProps {
 export default function BookingModal({ isOpen, onClose, initialExperience }: BookingModalProps) {
   const [experience, setExperience] = useState(initialExperience || "Spiral Tower Climb (55m)");
   const [date, setDate] = useState("2026-10-28");
-  const [timeSlot, setTimeSlot] = useState("08:00 AM – 10:00 AM (Morning Mist)");
+  const [timeSlot, setTimeSlot] = useState("08:00 AM â€“ 10:00 AM (Morning Mist)");
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const [residentType, setResidentType] = useState<"local" | "foreign">("local");
@@ -40,7 +40,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
         {/* Modal Header */}
         <div className="bg-[#162F21] text-white px-6 sm:px-8 py-5 flex items-center justify-between border-b border-[#234834]">
           <div>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#C5A880] block mb-0.5">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#BFD8F0] block mb-0.5">
               Sanctuary Ticketing &amp; Reservations
             </span>
             <h3 className="font-serif text-2xl font-light">
@@ -59,7 +59,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
         <div className="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
           {step === "confirmed" ? (
             <div className="text-center py-8">
-              <div className="w-16 h-16 rounded-full bg-[#162F21] text-[#C5A880] flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-[#162F21] text-[#BFD8F0] flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
               <h4 className="font-serif text-3xl font-light text-[#162F21] mb-2">
@@ -97,11 +97,11 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                   className="fs-btn w-full sm:w-auto px-6 py-3 bg-[#162F21] text-white text-xs uppercase tracking-[0.18em] font-semibold rounded-[3px] flex items-center justify-center space-x-2"
                 >
                   <span>Official Online Portal</span>
-                  <ExternalLink className="w-3.5 h-3.5 text-[#C5A880]" />
+                  <ExternalLink className="w-3.5 h-3.5 text-[#BFD8F0]" />
                 </a>
                 <button
                   onClick={onClose}
-                  className="w-full sm:w-auto px-6 py-3 border border-[#C5A880] text-[#162F21] text-xs uppercase tracking-[0.18em] font-medium rounded-[3px]"
+                  className="w-full sm:w-auto px-6 py-3 border border-[#BFD8F0] text-[#162F21] text-xs uppercase tracking-[0.18em] font-medium rounded-[3px]"
                 >
                   Close Window
                 </button>
@@ -122,7 +122,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                     className={`py-3 px-4 rounded-[3px] border text-left text-xs font-semibold transition-all ${
                       residentType === "local"
                         ? "bg-[#162F21] text-white border-[#162F21]"
-                        : "bg-[#FAF7F0] text-[#55635B] border-[#DDD4C3] hover:border-[#C5A880]"
+                        : "bg-[#FAF7F0] text-[#55635B] border-[#DDD4C3] hover:border-[#BFD8F0]"
                     }`}
                   >
                     <div>Sri Lankan Resident</div>
@@ -135,7 +135,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                     className={`py-3 px-4 rounded-[3px] border text-left text-xs font-semibold transition-all ${
                       residentType === "foreign"
                         ? "bg-[#162F21] text-white border-[#162F21]"
-                        : "bg-[#FAF7F0] text-[#55635B] border-[#DDD4C3] hover:border-[#C5A880]"
+                        : "bg-[#FAF7F0] text-[#55635B] border-[#DDD4C3] hover:border-[#BFD8F0]"
                     }`}
                   >
                     <div>International Traveler</div>
@@ -152,7 +152,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                 <select
                   value={experience}
                   onChange={(e) => setExperience(e.target.value)}
-                  className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#C5A880]"
+                  className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#BFD8F0]"
                 >
                   <option value="Spiral Tower Climb (55m)">Spiral Tower Climb (55m)</option>
                   <option value="Biodiversity Nature Trail">Biodiversity Nature Trail &amp; Flora</option>
@@ -173,7 +173,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                     required
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#C5A880]"
+                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#BFD8F0]"
                   />
                 </div>
 
@@ -184,12 +184,12 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                   <select
                     value={timeSlot}
                     onChange={(e) => setTimeSlot(e.target.value)}
-                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#C5A880]"
+                    className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#BFD8F0]"
                   >
-                    <option value="07:30 AM – 10:00 AM (Early Calm)">07:30 AM – 10:00 AM (Early Calm)</option>
-                    <option value="10:00 AM – 01:00 PM (Midday Sun)">10:00 AM – 01:00 PM (Midday Sun)</option>
-                    <option value="01:00 PM – 03:30 PM (Afternoon Mist)">01:00 PM – 03:30 PM (Afternoon Mist)</option>
-                    <option value="03:30 PM – 05:30 PM (Golden Sunset)">03:30 PM – 05:30 PM (Golden Sunset)</option>
+                    <option value="07:30 AM â€“ 10:00 AM (Early Calm)">07:30 AM â€“ 10:00 AM (Early Calm)</option>
+                    <option value="10:00 AM â€“ 01:00 PM (Midday Sun)">10:00 AM â€“ 01:00 PM (Midday Sun)</option>
+                    <option value="01:00 PM â€“ 03:30 PM (Afternoon Mist)">01:00 PM â€“ 03:30 PM (Afternoon Mist)</option>
+                    <option value="03:30 PM â€“ 05:30 PM (Golden Sunset)">03:30 PM â€“ 05:30 PM (Golden Sunset)</option>
                   </select>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
 
                 <button
                   type="submit"
-                  className="fs-btn px-6 py-3.5 bg-[#C5A880] hover:bg-[#D4BA95] text-[#122319] text-xs uppercase tracking-[0.18em] font-semibold rounded-[3px] shadow flex items-center space-x-2"
+                  className="fs-btn px-6 py-3.5 bg-[#BFD8F0] hover:bg-[#DCEBF8] text-[#122319] text-xs uppercase tracking-[0.18em] font-semibold rounded-[3px] shadow flex items-center space-x-2"
                 >
                   <CreditCard className="w-4 h-4" />
                   <span>Confirm Reservation</span>
