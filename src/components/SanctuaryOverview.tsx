@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default function SanctuaryOverview() {
       icon: Flag,
       tag: "55m Summit Spire",
       title: "55 Steps to Limitless Horizons",
-      desc: "Climb the towerâ€™s spiral staircase, only 55 meters tall, and be rewarded with majestic views that soar far beyond."
+      desc: "Climb the tower’s spiral staircase, only 55 meters tall, and be rewarded with majestic views that soar far beyond."
     },
     {
       icon: Eye,
@@ -64,7 +64,7 @@ export default function SanctuaryOverview() {
     <section className="py-20 sm:py-28 bg-[#0B2545] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Divider Header (Exact Reference Style: "â€”â€” ABOUT THE TOUR â€”â€”") */}
+        {/* Section Divider Header (Exact Reference Style: "—— ABOUT THE TOUR ——") */}
         <div className="flex items-center space-x-4 mb-14 sm:mb-16">
           <div className="w-10 sm:w-16 h-[1px] bg-white/30 shrink-0" />
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.25em] text-white shrink-0">
@@ -91,7 +91,7 @@ export default function SanctuaryOverview() {
                 Exploring its essence, Ambuluwawa unfolds as more than just the tower&apos;s name; it embodies the towering mountain, where human craftsmanship meets the awe-inspiring beauty of nature.
               </p>
               <p className="text-white/90">
-                No need to worry about schedules or planning â€” everything is organized. We provide direct digital entry passes, safari transit, and clearly marked trails so you can simply <span className="text-[#BFD8F0] font-semibold underline underline-offset-4 decoration-[#BFD8F0]/50">enjoy the journey</span>.
+                No need to worry about schedules or planning — everything is organized. We provide direct digital entry passes, safari transit, and clearly marked trails so you can simply <span className="text-[#BFD8F0] font-semibold underline underline-offset-4 decoration-[#BFD8F0]/50">enjoy the journey</span>.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export default function SanctuaryOverview() {
                 <div className="text-[9px] uppercase tracking-[0.16em] text-white/60 mt-0.5">Spiral Spire</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
-                <div className="font-serif text-xl sm:text-2xl text-[#BFD8F0] font-light">360Â°</div>
+                <div className="font-serif text-xl sm:text-2xl text-[#BFD8F0] font-light">360°</div>
                 <div className="text-[9px] uppercase tracking-[0.16em] text-white/60 mt-0.5">Highland View</div>
               </div>
             </div>

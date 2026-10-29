@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -47,7 +47,7 @@ export default function DistanceCalculator() {
       distance: "128 km",
       duration: "3hr 30min ride",
       tag: "Cultural Triangle Route",
-      tip: "Connect Sri Lankaâ€™s 5th-century rock fortress with the modern sacred spiral peak.",
+      tip: "Connect Sri Lanka’s 5th-century rock fortress with the modern sacred spiral peak.",
       img: "https://ambuluwawa.com/wp-content/uploads/2024/01/Artboard-7.webp",
       colSpan: "lg:col-span-3",
     },

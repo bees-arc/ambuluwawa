@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { Ticket, Clock, Phone } from "lucide-react";
@@ -25,7 +25,7 @@ export default function StickyBookingBar() {
             <span>Open 365 Days</span>
           </div>
           <div className="text-xs font-serif text-white">
-            07:30 AM â€“ 05:30 PM
+            07:30 AM – 05:30 PM
           </div>
         </div>
 

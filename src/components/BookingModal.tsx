@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import { X, Calendar, Users, Compass, CheckCircle2, CreditCard, ExternalLink, ShieldCheck } from "lucide-react";
@@ -12,7 +12,7 @@ interface BookingModalProps {
 export default function BookingModal({ isOpen, onClose, initialExperience }: BookingModalProps) {
   const [experience, setExperience] = useState(initialExperience || "Spiral Tower Climb (55m)");
   const [date, setDate] = useState("2026-10-28");
-  const [timeSlot, setTimeSlot] = useState("08:00 AM â€“ 10:00 AM (Morning Mist)");
+  const [timeSlot, setTimeSlot] = useState("08:00 AM – 10:00 AM (Morning Mist)");
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const [residentType, setResidentType] = useState<"local" | "foreign">("local");
@@ -186,10 +186,10 @@ export default function BookingModal({ isOpen, onClose, initialExperience }: Boo
                     onChange={(e) => setTimeSlot(e.target.value)}
                     className="w-full px-4 py-3 rounded-[3px] bg-[#FAF7F0] border border-[#DDD4C3] text-sm text-[#181B19] focus:outline-none focus:border-[#BFD8F0]"
                   >
-                    <option value="07:30 AM â€“ 10:00 AM (Early Calm)">07:30 AM â€“ 10:00 AM (Early Calm)</option>
-                    <option value="10:00 AM â€“ 01:00 PM (Midday Sun)">10:00 AM â€“ 01:00 PM (Midday Sun)</option>
-                    <option value="01:00 PM â€“ 03:30 PM (Afternoon Mist)">01:00 PM â€“ 03:30 PM (Afternoon Mist)</option>
-                    <option value="03:30 PM â€“ 05:30 PM (Golden Sunset)">03:30 PM â€“ 05:30 PM (Golden Sunset)</option>
+                    <option value="07:30 AM – 10:00 AM (Early Calm)">07:30 AM – 10:00 AM (Early Calm)</option>
+                    <option value="10:00 AM – 01:00 PM (Midday Sun)">10:00 AM – 01:00 PM (Midday Sun)</option>
+                    <option value="01:00 PM – 03:30 PM (Afternoon Mist)">01:00 PM – 03:30 PM (Afternoon Mist)</option>
+                    <option value="03:30 PM – 05:30 PM (Golden Sunset)">03:30 PM – 05:30 PM (Golden Sunset)</option>
                   </select>
                 </div>
               </div>

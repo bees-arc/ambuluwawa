@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -49,7 +49,7 @@ export default function VisitorCreativityVideo() {
 
             {/* Exact Text from ambuluwawa.com */}
             <p className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-[#FAF7F0] leading-relaxed max-w-3xl mx-auto mb-8">
-              &ldquo;Grasping Ambuluwawaâ€™s splendor poses challenges, yet our visitors skillfully craft personalized narratives through their lenses, creativity, and social media.&rdquo;
+              &ldquo;Grasping Ambuluwawa’s splendor poses challenges, yet our visitors skillfully craft personalized narratives through their lenses, creativity, and social media.&rdquo;
             </p>
 
             {/* Exact Button from ambuluwawa.com with solid white pill button */}

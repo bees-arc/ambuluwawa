@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -8,12 +8,12 @@ export default function ExperiencesGrid() {
   const experiences = [
     {
       id: "java-lounge",
-      category: "Scenic Mountain CafÃ©",
+      category: "Scenic Mountain Café",
       title: "Java Lounge",
       desc: "Coffee, serenity, and breathtaking panoramas at the mountain summit.",
       img: "https://ambuluwawa.com/wp-content/uploads/2024/06/a2.webp",
       icon: Coffee,
-      highlight: "Highest coffee deck in Sri Lanka with 360Â° cloud views",
+      highlight: "Highest coffee deck in Sri Lanka with 360° cloud views",
       colSpan: "lg:col-span-8",
       aspectRatio: "h-72 sm:h-80 lg:h-96",
     },

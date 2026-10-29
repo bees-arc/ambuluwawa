@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -251,7 +251,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-6 text-[10px] tracking-wide">
             <span>Sri Lanka Tourism</span>
-            <span>â€¢</span>
+            <span>•</span>
             <span>Bio Diversity Complex</span>
           </div>
         </div>

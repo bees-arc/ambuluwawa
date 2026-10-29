@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -8,7 +8,7 @@ export default function CuratedJournal() {
   const articles = [
     {
       id: "perahera",
-      title: "Sacred Rhythms and Cloudy Heights: Pairing Kandyâ€™s Perahera with a Trip to Ambuluwawa",
+      title: "Sacred Rhythms and Cloudy Heights: Pairing Kandy’s Perahera with a Trip to Ambuluwawa",
       date: "August 1, 2025",
       excerpt: "Every year, when the Esala moon rises, pairing Kandy's heritage pageant with the morning summit climb of Ambuluwawa creates the ultimate cultural retreat.",
       image: "https://ambuluwawa.com/wp-content/uploads/2025/08/Kandy-Esala-Perahara-2024.jpg",
@@ -16,9 +16,9 @@ export default function CuratedJournal() {
     },
     {
       id: "action-date",
-      title: "Ditch the CafÃ©: Why Ambuluwawa Is the Ultimate Summer Action Date Spot",
+      title: "Ditch the Café: Why Ambuluwawa Is the Ultimate Summer Action Date Spot",
       date: "July 4, 2025",
-      excerpt: "Letâ€™s be honest. Sitting across from each other in a cafÃ© is routine. Ambuluwawa offers adventure, mountain air, and shared summit heights.",
+      excerpt: "Let’s be honest. Sitting across from each other in a café is routine. Ambuluwawa offers adventure, mountain air, and shared summit heights.",
       image: "https://ambuluwawa.com/wp-content/uploads/2024/06/Firefly-20240617204232-1.webp",
       url: "https://ambuluwawa.com/ditch-the-cafe-why-ambuluwawa-is-the-ultimate-summer-action-date-spot/",
     },

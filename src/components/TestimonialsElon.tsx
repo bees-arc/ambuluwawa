@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -27,7 +27,7 @@ export default function TestimonialsElon() {
             Ambuluwawa Welcomes All!
           </h3>
           <p className="text-sm text-white/70 font-light leading-relaxed">
-            The allure of Ambuluwawa touches all, from the world&apos;s richest man to foreigners and locals alike. Every individual who crosses its path always leaves with a memory to share â€” even if it&apos;s just a simple &ldquo;!&rdquo;.
+            The allure of Ambuluwawa touches all, from the world&apos;s richest man to foreigners and locals alike. Every individual who crosses its path always leaves with a memory to share — even if it&apos;s just a simple &ldquo;!&rdquo;.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function TestimonialsElon() {
 
               <div className="my-4">
                 <p className="text-sm text-white/80 font-light leading-relaxed italic">
-                  &ldquo;We visited this place in December 2023. It was really an amazing experience for us. Like the narrow way, amazing view from top, windy air. Do not carry ðŸŽ’ ðŸ› etc things, so that it will be easy to step up.&rdquo;
+                  &ldquo;We visited this place in December 2023. It was really an amazing experience for us. Like the narrow way, amazing view from top, windy air. Do not carry 🎒 🛍 etc things, so that it will be easy to step up.&rdquo;
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function TestimonialsElon() {
               <div>
                 <div className="text-white font-serif text-xl sm:text-2xl font-light flex items-center space-x-2">
                   <span>4.8 Out of 5.0 Rating</span>
-                  <span className="text-[#BFD8F0] text-sm font-sans font-semibold">â€¢ 2,500+ Traveler Reviews</span>
+                  <span className="text-[#BFD8F0] text-sm font-sans font-semibold">• 2,500+ Traveler Reviews</span>
                 </div>
                 <div className="text-xs text-white/60 mt-0.5">
                   Sri Lanka&apos;s highest-rated multi-religious mountain biodiversity sanctuary

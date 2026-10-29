@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import { 
@@ -50,7 +50,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
           </h2>
           <div className="w-16 h-[1.5px] bg-[#BFD8F0] mx-auto mb-6" />
           <p className="text-[#5B6B62] text-sm sm:text-base font-light leading-relaxed">
-            Everything you need for an effortless, exhilarating visit â€” from live admission fees 
+            Everything you need for an effortless, exhilarating visit — from live admission fees 
             and opening hours to safety guidelines for the spiral climb.
           </p>
         </div>
@@ -144,7 +144,7 @@ export default function VisitorGuide({ onOpenBooking }: VisitorGuideProps) {
                   <SunMedium className="w-4 h-4 text-[#BFD8F0] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#162F21] font-medium">Best Timing:</strong>
-                    <span className="ml-1 text-[#66776E]">Early mornings (08:00 AM â€“ 10:30 AM) offer the crispest 360Â° visibility before afternoon cloud cover.</span>
+                    <span className="ml-1 text-[#66776E]">Early mornings (08:00 AM – 10:30 AM) offer the crispest 360° visibility before afternoon cloud cover.</span>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -53,7 +53,7 @@ export default function OpeningInfoSection() {
     },
     {
       icon: Compass,
-      title: "360Â° Viewpoints",
+      title: "360° Viewpoints",
       desc: "Observation terraces overlooking Pidurutalagala, Adam's Peak & Kandy."
     }
   ];
@@ -62,7 +62,7 @@ export default function OpeningInfoSection() {
     <section className="py-20 sm:py-28 bg-[#0B2545] text-[#FAF7F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Divider Header (Exact Reference Style: "â€”â€” WHAT'S INCLUDED â€”â€”") */}
+        {/* Section Divider Header (Exact Reference Style: "—— WHAT'S INCLUDED ——") */}
         <div className="flex items-center space-x-4 mb-12 sm:mb-14">
           <div className="w-10 sm:w-16 h-[1px] bg-white/30 shrink-0" />
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.25em] text-white shrink-0">
@@ -107,7 +107,7 @@ export default function OpeningInfoSection() {
             <div className="flex items-center space-x-4 text-xs text-white/70">
               <span className="flex items-center">
                 <Clock className="w-3.5 h-3.5 mr-1 text-[#BFD8F0]" />
-                Open Today: 07:30 AM â€“ 05:30 PM
+                Open Today: 07:30 AM – 05:30 PM
               </span>
               <span className="hidden md:inline text-white/30">|</span>
               <span className="hidden md:inline text-[#BFD8F0] font-medium">Open 365 Days a Year</span>
@@ -203,7 +203,7 @@ export default function OpeningInfoSection() {
               </h3>
 
               <p className="text-sm text-white/80 font-light leading-relaxed mb-6">
-                Your daily escape to nature is ready whenever you are! We welcome visitors 365 days a year. ðŸŒ¿
+                Your daily escape to nature is ready whenever you are! We welcome visitors 365 days a year. 🌿
               </p>
             </div>
 

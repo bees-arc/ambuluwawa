@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ export default function GallerySection() {
     },
     {
       src: "https://ambuluwawa.com/wp-content/uploads/2024/06/a2.webp",
-      title: "Java Lounge Mountain CafÃ©",
+      title: "Java Lounge Mountain Café",
       caption: "Artisan Ceylon brews and serene reflection points overlooking emerald tea valleys.",
       span: "md:col-span-1 md:row-span-1",
     },
